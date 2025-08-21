@@ -1,0 +1,21 @@
+{
+    "name": "cbx/cbxpoll",
+    "description": "cbx poll plugin",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Cbx\\Poll\\": "includes/"
+        },
+        "files": [
+            "includes/Helpers/cbxpoll-functions.php",
+            "includes/Helpers/cbxpoll-tpl-loader.php",
+            "includes/Helpers/CBXPollEmailFunctions.php"
+        ]
+    },
+    "require": {
+        "soundasleep/html2text": "^2.1",
+        "pelago/emogrifier": "^7.0",
+        "enshrined/svg-sanitize": "dev-master"
+    }
+}

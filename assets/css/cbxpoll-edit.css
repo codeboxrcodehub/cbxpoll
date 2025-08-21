@@ -1,0 +1,33 @@
+@import"https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap";
+.cbx-chota{--color-primary: #6648fe;--color-secondary: #747681}
+.cbx-chota{--bg-color: #ffffff;--bg-secondary-color:#f3f3f6;--color-lightGrey: #d2d6dd;--color-grey: #747681;--color-darkGrey: #3f4144;--color-error: #d43939;--color-success: #339D5D;--color-white: #ffffff;--grid-maxWidth: 120rem;--grid-gutter: 2rem;--font-size: 0.875rem;--font-color: #333333;--font-family-sans: "DM Sans", -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;--font-family-mono: monaco, "Consolas", "Lucida Console", monospace}
+.meta-options label{display:block}
+body.dragging,body.dragging *{cursor:move !important}
+.dragged{position:absolute;opacity:.5;z-index:2000}
+.cbxpoll_clear{clear:both}
+#cbxpoll_metabox{background:#00204a !important;color:#fff !important}
+#cbxpoll_metabox .postbox-header{background-color:#fff;color:#000}
+#cbxpoll_metabox .cbx-chota input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=color]):not([type=button]):not([type=reset]),#cbxpoll_metabox .cbx-chota select,#cbxpoll_metabox .cbx-chota textarea,#cbxpoll_metabox .cbx-chota textarea[type=text]{width:auto;display:inline-block;background-color:#fff}
+#cbxpoll_metabox label{color:#fff !important}
+#cbx_poll_answers_items li{display:flex;align-items:center}
+#cbx_poll_answers_items li.cbx_poll_items_placeholder{background:#f7f7f7;min-height:36px;border:1px dashed}
+#cbx_poll_answers_items li.cbx_poll_items{list-style:none;margin:6px 0;border:1px solid #ccc;padding:5px;position:relative;border-radius:4px}
+#cbx_poll_answers_items li.cbx_poll_items .cbx_pollmove{order:0;margin-right:5px}
+#cbx_poll_answers_items li.cbx_poll_items .cbxpoll_answer{order:1;font-weight:normal !important;font-size:14px !important;line-height:1.2 !important}
+#cbx_poll_answers_items li.cbx_poll_items .cbxpoll_answer_color-wrap{margin-left:10px;margin-right:10px;order:2}
+#cbx_poll_answers_items li.cbx_poll_items .cbxpoll_answer_extra_field_trig{order:3;margin-right:10px}
+#cbx_poll_answers_items li.cbx_poll_items .cbxpoll_answer_reason_field_trig{order:4}
+#cbx_poll_answers_items li.cbx_poll_items .cbx_pollremove{order:5;margin-left:auto}
+#cbx_poll_answers_items li.cbx_poll_items .cbxpoll_answer_reason_field_panel{order:6}
+#cbx_poll_answers_items li.placeholder{position:relative}
+#cbx_poll_answers_items li.placeholder:before{position:absolute}
+#cbxpoll_meta_fields_wrapper{max-width:800px;width:100%;margin:0 auto}
+#cbxpoll_meta_fields_wrapper .add-cbx-poll-answer-wrap{text-align:center}
+#cbxpoll_meta_fields_wrapper .add-cbx-poll-answer-wrap .add-cbx-poll-answer .cbx-icon svg{width:20px;height:20px}
+#cbxpoll_meta_fields_wrapper .form-table tr:nth-child(odd){background-color:#faf9f6}
+#cbxpoll_meta_fields_wrapper .form-table td fieldset.radio_fields label{display:inline-block !important;margin-right:10px !important}
+#cbxpoll_meta_fields_wrapper .form-table td fieldset.radio_fields label:last-child{margin-right:0 !important}
+#cbxpoll_meta_fields_wrapper .form-table .description{display:block;clear:both;width:100%;margin-top:5px}
+#cbxpoll_meta_fields_wrapper .form-table select,#cbxpoll_meta_fields_wrapper .form-table input[type=text],#cbxpoll_meta_fields_wrapper .form-table input[type=password],#cbxpoll_meta_fields_wrapper .form-table input[type=date],#cbxpoll_meta_fields_wrapper .form-table input[type=datetime],#cbxpoll_meta_fields_wrapper .form-table input[type=datetime-local],#cbxpoll_meta_fields_wrapper .form-table input[type=email],#cbxpoll_meta_fields_wrapper .form-table input[type=month],#cbxpoll_meta_fields_wrapper .form-table input[type=number],#cbxpoll_meta_fields_wrapper .form-table input[type=search],#cbxpoll_meta_fields_wrapper .form-table input[type=tel],#cbxpoll_meta_fields_wrapper .form-table input[type=time],#cbxpoll_meta_fields_wrapper .form-table input[type=url],#cbxpoll_meta_fields_wrapper .form-table input[type=week],#cbxpoll_meta_fields_wrapper .form-table textarea{max-width:500px;width:100%}
+#cbxpoll_meta_fields_wrapper .flexwrap{display:flex;flex-wrap:wrap}
+#cbxpoll_meta_fields_wrapper .flexwrap input[type=text],#cbxpoll_meta_fields_wrapper .flexwrap select{width:auto}

@@ -1,0 +1,3 @@
+@import"https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap";
+.cbx-chota{--color-primary: #6648fe;--color-secondary: #747681}
+.cbx-chota{--bg-color: #ffffff;--bg-secondary-color:#f3f3f6;--color-lightGrey: #d2d6dd;--color-grey: #747681;--color-darkGrey: #3f4144;--color-error: #d43939;--color-success: #339D5D;--color-white: #ffffff;--grid-maxWidth: 120rem;--grid-gutter: 2rem;--font-size: 0.875rem;--font-color: #333333;--font-family-sans: "DM Sans", -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;--font-family-mono: monaco, "Consolas", "Lucida Console", monospace}
