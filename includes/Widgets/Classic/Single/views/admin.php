@@ -1,4 +1,5 @@
 <?php
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 // If this file is called directly, abort.
 use Cbx\Poll\Helpers\PollHelper;
 

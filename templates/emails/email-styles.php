@@ -1,8 +1,5 @@
 <?php
-/**
- * Email Styles
- *
- */
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {

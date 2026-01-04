@@ -38,28 +38,16 @@ class CBXPollActivator {
 	public static function activate() {
 		PollHelper::install_table();
 
+		//add flag for rewrite cache flush
 		add_option( 'cbxpoll_flush_rewrite_rules', 'true' );
 
+		//add flag for activation notice
 		set_transient( 'cbxpoll_activated_notice', 1 );
-
-		if ( ! function_exists( 'is_plugin_active' ) ) {
-			include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-		}
-
-		if ( in_array( 'cbxpollproaddon/cbxpollproaddon.php', apply_filters( 'active_plugins',
-				get_option( 'active_plugins' ) ) ) || defined( 'CBXPOLLPROADDON_PLUGIN_NAME' ) ) {
-			//plugin is activated
-
-			$pro_plugin_version = CBXPOLLPROADDON_PLUGIN_VERSION;
-
-
-			if ( version_compare( $pro_plugin_version, '2.0.0', '<' ) ) {
-				deactivate_plugins( 'cbxpollproaddon/cbxpollproaddon.php' );
-				set_transient( 'cbxpollproaddon_forcedactivated_notice', 1 );
-			}
-		}
 
 		// Update the saved version
 		update_option('cbxpoll_version', CBXPOLL_PLUGIN_VERSION);
+
+		//hook for others
+		do_action( 'cbxpoll_on_activation' );
 	}//end method activate
 }//end class CBXPollActivator

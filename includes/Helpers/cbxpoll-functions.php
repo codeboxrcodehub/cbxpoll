@@ -21,7 +21,7 @@ use enshrined\svgSanitize\Sanitizer;
  */
 function cbxpoll_deprecated_function( $function, $version, $replacement = null ) {
 	if ( defined( 'DOING_AJAX' ) ) {
-		do_action( 'deprecated_function_run', $function, $replacement, $version );
+		do_action( 'deprecated_function_run', $function, $replacement, $version );//phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 		$log_string = "The {$function} function is deprecated since version {$version}.";
 		$log_string .= $replacement ? " Replace with {$replacement}." : '';
 		error_log( $log_string );//phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log

@@ -24,5 +24,8 @@ class CBXPollDeactivator {
 	 */
 	public static function deactivate() {
 		delete_option( 'cbxpoll_flush_rewrite_rules' );
+
+		//hook for others
+		do_action( 'cbxpoll_on_deactivation' );
 	}//end method deactivate
 }//end class CBXPollDeactivator

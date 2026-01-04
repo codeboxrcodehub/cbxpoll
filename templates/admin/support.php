@@ -1,4 +1,6 @@
 <?php
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
+
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
     die;
@@ -91,10 +93,19 @@ $doc_url    = PollHelper::url_utmy( 'https://codeboxr.com/doc/cbxpoll-doc/' );
                 <div class="cbx-backend-card dashboard-changelog">
                     <div class="header">
                         <div class="text">
-                            <h2><?php esc_html_e( 'Changelog Core Plugin', 'cbxpoll' ); ?></h2>
+                            <h2><?php esc_html_e( 'Changelog of Core Plugin', 'cbxpoll' ); ?></h2>
                         </div>
                     </div>
                     <div class="content">
+                        <div class="cbx-backend-settings-row">
+                            <p>Version - 2.0.1</p>
+                            <ul>
+                                <li>[update] Plugin check version V1.8.0 compatible</li>
+                                <li>[updated] WordPress core V6.9 compatible</li>
+                                <li>[new] Pro Addon plugin V2.0.1 released</li>
+                                <li>[updated] Misc improvement</li>
+                            </ul>
+                        </div>
                         <div class="cbx-backend-settings-row">
                             <p>Version - 2.0.0</p>
                             <ul>
@@ -117,11 +128,23 @@ $doc_url    = PollHelper::url_utmy( 'https://codeboxr.com/doc/cbxpoll-doc/' );
                 <div class="cbx-backend-card dashboard-changelog">
                     <div class="header">
                         <div class="text">
-                            <h2><?php esc_html_e( 'Changelog Pro Addon', 'cbxpoll' ); ?></h2>
+                            <h2><?php esc_html_e( 'Changelog of Pro Addon', 'cbxpoll' ); ?></h2>
                         </div>
                     </div>
                     <div class="content">
                         <div class="cbx-backend-settings-row">
+                            <div class="cbx-backend-settings-row">
+                                <p>Version - 2.0.1</p>
+                                <ul>
+                                    <li>[new] Auto or Dashboard update implemented(need licence key)</li>
+                                    <li>[new] GamiPress integration</li>
+                                    <li>[new] Uncanny automator integration</li>
+                                    <li>[update] Plugin check version V1.8.0 compatible</li>
+                                    <li>[updated] WordPress core V6.9 compatible</li>
+                                    <li>[new] Core plugin V2.0.1 released</li>
+                                    <li>[updated] Misc improvement</li>
+                                </ul>
+                            </div>
                             <div class="cbx-backend-settings-row">
                                 <p>Version - 2.0.0</p>
                                 <ul>

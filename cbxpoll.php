@@ -9,7 +9,7 @@
  * Plugin Name:       CBX Poll
  * Plugin URI:        https://codeboxr.com/product/cbx-poll-for-wordpress/
  * Description:       Poll and vote system for WordPress
- * Version:           2.0.0
+ * Version:           2.0.1
  * Author:            codeboxr
  * Author URI:        https://codeboxr.com
  * License:           GPL-2.0+
@@ -29,10 +29,12 @@ use Cbx\Poll\Helpers\PollHelper;
 
 //plugin definition specific constants
 defined( 'CBXPOLL_PLUGIN_NAME' ) or define( 'CBXPOLL_PLUGIN_NAME', 'cbxpoll' );
-defined( 'CBXPOLL_PLUGIN_VERSION' ) or define( 'CBXPOLL_PLUGIN_VERSION', '2.0.0' );
+defined( 'CBXPOLL_PLUGIN_VERSION' ) or define( 'CBXPOLL_PLUGIN_VERSION', '2.0.1' );
 defined( 'CBXPOLL_BASE_NAME' ) or define( 'CBXPOLL_BASE_NAME', plugin_basename( __FILE__ ) );
 defined( 'CBXPOLL_ROOT_PATH' ) or define( 'CBXPOLL_ROOT_PATH', plugin_dir_path( __FILE__ ) );
 defined( 'CBXPOLL_ROOT_URL' ) or define( 'CBXPOLL_ROOT_URL', plugin_dir_url( __FILE__ ) );
+
+defined( 'CBXPOLL_PRO_VERSION' ) or define( 'CBXPOLL_PRO_VERSION', '2.0.1' );
 
 //plugin functionality specific constants
 defined( 'CBXPOLL_COOKIE_EXPIRATION' ) or define( 'CBXPOLL_COOKIE_EXPIRATION', time() + 1209600 ); //Expiration of 14 days.
@@ -91,7 +93,7 @@ function cbxpoll_compatible_php_version( $version = '' ) {
  * The code that runs during plugin activation.
  * This action is documented in includes/CBXPollActivator.php
  */
-function activate_cbxpoll() {
+function cbxpoll_activate() {
     $wp_version  = CBXPOLL_WP_MIN_VERSION;
     $php_version = CBXPOLL_PHP_MIN_VERSION;
 
@@ -119,19 +121,19 @@ function activate_cbxpoll() {
 	    require_once CBXPOLL_ROOT_PATH . 'includes/CBXPollActivator.php';
 	    CBXPollActivator::activate();
     }
-}//end function activate_cbxpoll
+}//end function cbxpoll_activate
 
 /**
  * The code that runs during plugin deactivation.
  * This action is documented in includes/CBXPollDeactivator.php
  */
-function deactivate_cbxpoll() {
+function cbxpoll_deactivate() {
 	require_once CBXPOLL_ROOT_PATH . 'includes/CBXPollDeactivator.php';
 	CBXPollDeactivator::deactivate();
-}//end function deactivate_cbxpoll
+}//end function cbxpoll_deactivate
 
-register_activation_hook( __FILE__, 'activate_cbxpoll' );
-register_deactivation_hook( __FILE__, 'deactivate_cbxpoll' );
+register_activation_hook( __FILE__, 'cbxpoll_activate' );
+register_deactivation_hook( __FILE__, 'cbxpoll_deactivate' );
 
 /**
  * Initialize the plugin manually
@@ -142,7 +144,7 @@ function cbxpoll_core() { // phpcs:ignore WordPress.NamingConventions.ValidFunct
     global $cbxpoll_core;
 
     if ( ! isset( $cbxpoll_core ) ) {
-        $cbxpoll_core = run_cbxpoll();
+        $cbxpoll_core = cbxpoll_run();
     }
 
     return $cbxpoll_core;
@@ -154,10 +156,10 @@ function cbxpoll_core() { // phpcs:ignore WordPress.NamingConventions.ValidFunct
  *
  * @since    2.0.0
  */
-function run_cbxpoll() {
+function cbxpoll_run() {
     return CBXPoll::instance();
-}//end function run_cbxpoll
+}//end function cbxpoll_run
 
 
 //load the plugin
-$GLOBALS['cbxpoll_core'] = run_cbxpoll();
+$GLOBALS['cbxpoll_core'] = cbxpoll_run();

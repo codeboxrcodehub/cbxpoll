@@ -446,10 +446,7 @@
 
             var onOk = () => {
                 $this.attr('disabled', true);
-
-
                 $this.hide();
-
 
                 let $reset_tables = $('.reset_tables:checkbox:checked').map(function () {
                     return this.value;

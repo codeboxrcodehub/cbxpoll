@@ -3,8 +3,8 @@ Contributors: codeboxr, manchumahara
 Donate link: https://codeboxr.com
 Tags: poll,vote,survey,quiz,contest
 Requires at least: 5.3
-Tested up to: 6.8
-Stable tag: 2.0.0
+Tested up to: 6.9
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -116,6 +116,12 @@ Poll post type content is poll description.
 
 
 == Changelog ==
+= 2.0.1 =
+* [updated] WordPress 6.9 compatible
+* [updated] Plugin 1.8.0 compatible
+* [new] Pro Addon 2.0.1 Released
+* [updated] Misc changes
+
 = 2.0.0 =
 * [new] Plugin check version V1.3.1 compatible
 * [updated] WordPress core V6.8 compatible

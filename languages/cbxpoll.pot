@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-20 14:49+0000\n"
+"POT-Creation-Date: 2026-01-04 12:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -20,167 +20,165 @@ msgstr ""
 msgid "%s does not exist."
 msgstr ""
 
-#. 1: Plugin details url
-#: includes/CBXPollAdmin.php:1788
+#. %s: product description url
+#: includes/CBXPollAdmin.php:1618
 #, php-format
 msgid ""
-"<a target=\"_blank\" href=\"%s\">CBX Poll Pro Addon</a> has some extra pro "
-"features, try it. - Codeboxr Team"
+"<a target=\"_blank\" href=\"%s\">CBX Poll Pro Addon</a> has extended "
+"features, settings, widgets and shortcodes. try it  - Codeboxr Team"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1716
+#: includes/CBXPollAdmin.php:1561
 msgid ""
 "<strong>CBX Poll Pro Addon</strong> has been deactivated as it's not "
 "compatible with core plugin <strong>CBX Poll</strong> current installed "
 "version. Please upgrade CBX Poll Pro Addon to latest version "
 msgstr ""
 
-#. translators:translators: %s: plugin setting url for licence
-#: includes/CBXPollAdmin.php:2240
+#. translators:translators: 1. Plugin latest version 2. Plugin latest version
+#: includes/CBXPollAdmin.php:2066
 #, php-format
 msgid ""
-"<strong>Note:</strong> CBX Poll Pro Addon is custom addon plugin. This "
-"plugin can not be auto update from dashboard/plugin manager. For manual "
-"update please check <a target=\"_blank\" href=\"%1$s\">documentation</a>. "
-"<strong style=\"color: red;\">It seems this plugin's current version is "
-"older than %2$s . To get the latest pro addon features, this plugin needs to "
-"upgrade to %2$s or later.</strong>"
+"<strong>Note:</strong> CBX Poll Pro Addon is custom plugin. <strong "
+"style=\"color: red;\">It seems this plugin's current version is older than "
+"%2$s . To get the latest pro addon features, this plugin needs to upgrade to "
+"%2$s or later.</strong>"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1178
+#: includes/CBXPollAdmin.php:1110
 msgid ""
 "[<strong>Note : </strong>  <span>Please select different color for each "
 "field.]</span>"
 msgstr ""
 
-#: templates/admin/dashboard.php:169
+#: templates/admin/dashboard.php:173
 msgid "Access our Premium Support"
 msgstr ""
 
-#: templates/admin/email_manager_list.php:27
+#: templates/admin/email_manager_list.php:33
 msgid "Actions"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1053 includes/CBXPollAdmin.php:1062
+#: includes/CBXPollAdmin.php:988 includes/CBXPollAdmin.php:997
 msgid "Active"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1229
+#: includes/CBXPollAdmin.php:1163
 msgid "Add Answer"
 msgstr ""
 
-#: includes/PollSettings.php:988 includes/Helpers/PollHelper.php:238
+#: includes/PollSettings.php:988 includes/Helpers/PollHelper.php:245
 msgid "Add New"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:237
+#: includes/Helpers/PollHelper.php:244
 msgctxt "Add New on Toolbar"
 msgid "Poll"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:239
+#: includes/Helpers/PollHelper.php:246
 msgid "Add New Poll"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:555
+#: includes/Emails/CBXPollEmail.php:556
 msgid "Additional content"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:236
+#: includes/Helpers/PollHelper.php:243
 msgctxt "Admin Menu text"
 msgid "Polls"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:243
+#: includes/Helpers/PollHelper.php:250
 msgid "All Polls"
 msgstr ""
 
 #. Answer Index
-#: includes/CBXPollAdmin.php:1631
+#: includes/CBXPollAdmin.php:1482
 msgid "Answer %d"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:693
+#: includes/CBXPollAdmin.php:691
 msgid "Answer Display Format"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1901
-#: widgets/elementor-elements/cbxpollsingle-elemwidget/class-cbxpollsingle-elemwidget.php:135
-#: widgets/classic-widgets/cbxpollsingle-widget/views/admin.php:56
+#: includes/CBXPollAdmin.php:1730
+#: includes/Widgets/Elementor/SinglePoll/CBXPollSingleElementorWidget.php:135
+#: includes/Widgets/Classic/Single/views/admin.php:57
 msgid "Answer Format"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:575 includes/Helpers/PollHelper.php:591
+#: includes/Helpers/PollHelper.php:596 includes/Helpers/PollHelper.php:613
 msgid "Approved"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2252
+#: includes/Helpers/PollHelper.php:2282
 msgid "Are you sure to remove all steps?"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2251
+#: includes/Helpers/PollHelper.php:2281
 msgid "Are you sure to remove this step?"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2247 includes/Helpers/PollHelper.php:2255
+#: includes/Helpers/PollHelper.php:2277 includes/Helpers/PollHelper.php:2285
 msgid "Are you sure?"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2281
+#: includes/Helpers/PollHelper.php:2311
 msgid "Attention"
 msgstr ""
 
 #. %s: list of placeholders
-#: includes/Emails/CBXPollEmail.php:530
+#: includes/Emails/CBXPollEmail.php:531
 #, php-format
 msgid "Available placeholders: %s"
 msgstr ""
 
-#: templates/admin/email_manager_edit.php:39
+#: templates/admin/email_manager_edit.php:46
 msgid "Back to list"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:845
+#: includes/CBXPollAdmin.php:783
 msgid "Background Colour"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:838
+#: includes/CBXPollAdmin.php:776
 msgid "Base Color"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:597
+#: includes/Emails/CBXPollEmail.php:598
 msgid "BCC"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:852
+#: includes/CBXPollAdmin.php:790
 msgid "Body Background Color"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:859
+#: includes/CBXPollAdmin.php:797
 msgid "Body Text Color"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:688
+#: includes/CBXPollAdmin.php:686
 msgid "Both(IP or cookie any one)"
 msgstr ""
 
-#: templates/admin/dashboard.php:87
+#: templates/admin/dashboard.php:91
 msgid "Buddypress"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:606 includes/Helpers/PollHelper.php:1652
+#: includes/CBXPollAdmin.php:604 includes/Helpers/PollHelper.php:1675
 msgid "Can user vote multiple option"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2265 includes/Helpers/PollHelper.php:2286
+#: includes/Helpers/PollHelper.php:2295 includes/Helpers/PollHelper.php:2316
 msgid "Cancel"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2270
+#: includes/Helpers/PollHelper.php:2300
 msgid "cancel and close"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:2003
+#: includes/CBXPollAdmin.php:1830
 msgid "CBX Blocks"
 msgstr ""
 
@@ -188,112 +186,112 @@ msgstr ""
 msgid "CBX Poll"
 msgstr ""
 
-#: templates/admin/dashboard.php:20
+#: templates/admin/dashboard.php:24
 msgid "CBX Poll - Helps & Updates"
 msgstr ""
 
-#: widgets/classic-widgets/cbxpollsingle-widget/cbxpollsingle-widget.php:50
+#: includes/Widgets/Classic/Single/CBXPollSingleClassicWidget.php:42
 msgid "CBX Poll Display Widget"
 msgstr ""
 
-#: templates/admin/support.php:175
+#: templates/admin/support.php:202
 msgid "CBX Poll Plugin Details"
 msgstr ""
 
-#: templates/admin/dashboard.php:190
+#: templates/admin/dashboard.php:194
 msgid "CBX Poll Plugin Information"
 msgstr ""
 
 #. PHP version
-#: cbxpoll.php:113
+#: cbxpoll.php:117
 #, php-format
 msgid "CBX Poll plugin requires PHP %s or higher!"
 msgstr ""
 
 #. WordPress version
-#: cbxpoll.php:104
+#: cbxpoll.php:108
 #, php-format
 msgid "CBX Poll plugin requires WordPress %s or higher!"
 msgstr ""
 
 #. PHP Version
-#: includes/CBXPoll.php:328
+#: includes/CBXPoll.php:330
 #, php-format
 msgid "CBX Poll requires at least PHP %s. Please upgrade PHP to run CBX Poll."
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1890
+#: includes/CBXPollAdmin.php:1719
 msgid "CBX Poll Single Block"
 msgstr ""
 
-#: widgets/classic-widgets/cbxpollsingle-widget/cbxpollsingle-widget.php:89
+#: includes/Widgets/Classic/Single/CBXPollSingleClassicWidget.php:81
 msgid "CBX Poll Single Widget"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:936 templates/admin/email_manager.php:29
+#: includes/CBXPollAdmin.php:876 templates/admin/email_manager.php:32
 msgid "CBX Poll: Email Manager"
 msgstr ""
 
-#: templates/admin/support.php:23
+#: templates/admin/support.php:29
 msgid "CBX Poll: Support & Docs"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1894
+#: includes/CBXPollAdmin.php:1723
 msgid "CBXPoll Single Block Settings"
 msgstr ""
 
-#: widgets/classic-widgets/cbxpollsingle-widget/cbxpollsingle-widget.php:153
-#: widgets/elementor-elements/cbxpollsingle-elemwidget/class-cbxpollsingle-elemwidget.php:35
+#: includes/Widgets/Classic/Single/CBXPollSingleClassicWidget.php:145
+#: includes/Widgets/Elementor/SinglePoll/CBXPollSingleElementorWidget.php:35
 msgid "CBXPoll Single Widget"
 msgstr ""
 
-#: widgets/elementor-elements/cbxpollsingle-elemwidget/class-cbxpollsingle-elemwidget.php:77
+#: includes/Widgets/Elementor/SinglePoll/CBXPollSingleElementorWidget.php:77
 msgid "CBXPoll Single Widget Setting"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2245
+#: includes/Helpers/PollHelper.php:2275
 msgctxt "cbxpoll-dialog"
 msgid "Cancel"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2246
+#: includes/Helpers/PollHelper.php:2276
 msgctxt "cbxpoll-dialog"
 msgid "Delete"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2244
+#: includes/Helpers/PollHelper.php:2274
 msgctxt "cbxpoll-dialog"
 msgid "Ok"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:589
+#: includes/Emails/CBXPollEmail.php:590
 msgid "CC"
 msgstr ""
 
-#: templates/admin/dashboard.php:218
+#: templates/admin/dashboard.php:222
 msgid "Changelog"
 msgstr ""
 
-#: templates/admin/support.php:90
-msgid "Changelog Core Plugin"
+#: templates/admin/support.php:96
+msgid "Changelog of Core Plugin"
 msgstr ""
 
-#: templates/admin/support.php:116
-msgid "Changelog Pro Addon"
+#: templates/admin/support.php:131
+msgid "Changelog of Pro Addon"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1897
-#: widgets/elementor-elements/cbxpollsingle-elemwidget/class-cbxpollsingle-elemwidget.php:108
-#: widgets/classic-widgets/cbxpollsingle-widget/views/admin.php:28
+#: includes/CBXPollAdmin.php:1726
+#: includes/Widgets/Elementor/SinglePoll/CBXPollSingleElementorWidget.php:108
+#: includes/Widgets/Classic/Single/views/admin.php:29
 msgid "Chart Type"
 msgstr ""
 
-#: includes/PollSettings.php:512 includes/Helpers/PollHelper.php:2112
+#: includes/PollSettings.php:512 includes/Helpers/PollHelper.php:2144
 msgid "Check All"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1275 includes/PollSettings.php:851
-#: includes/Helpers/PollHelper.php:1688
+#: includes/CBXPollAdmin.php:1209 includes/PollSettings.php:851
+#: includes/Helpers/PollHelper.php:1711
 msgid "Choose Color"
 msgstr ""
 
@@ -301,15 +299,15 @@ msgstr ""
 msgid "Choose File"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:566
+#: includes/Emails/CBXPollEmail.php:567
 msgid "Choose which format of email to send."
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2266
+#: includes/Helpers/PollHelper.php:2296
 msgid "Clear"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2271
+#: includes/Helpers/PollHelper.php:2301
 msgid "clear and close"
 msgstr ""
 
@@ -317,11 +315,11 @@ msgstr ""
 msgid "Clear Permalinks"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1399
+#: includes/CBXPollAdmin.php:1331
 msgid "Click to clipboard"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1401 includes/Helpers/PollHelper.php:2236
+#: includes/CBXPollAdmin.php:1333 includes/Helpers/PollHelper.php:2266
 msgid "Click to copy"
 msgstr ""
 
@@ -329,7 +327,7 @@ msgstr ""
 msgid "Click to show hide"
 msgstr ""
 
-#: includes/CBXPoll.php:113 includes/CBXPollEmails.php:45
+#: includes/CBXPoll.php:118 includes/CBXPollEmails.php:49
 #: includes/PollSettings.php:68
 msgid "Cloning is forbidden."
 msgstr ""
@@ -338,313 +336,301 @@ msgstr ""
 msgid "codeboxr"
 msgstr ""
 
-#: templates/admin/dashboard.php:259 templates/admin/support.php:255
+#: templates/admin/dashboard.php:263 templates/admin/support.php:282
 msgid "Codeboxr News Updates"
 msgstr ""
 
-#: includes/CBXPollPublic.php:914
+#: includes/CBXPollPublic.php:921
 msgid "Codeboxr Widgets"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2272
+#: includes/Helpers/PollHelper.php:2302
 msgid "color input field"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2260
+#: includes/Helpers/PollHelper.php:2290
 msgid "color picker dialog"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2273
+#: includes/Helpers/PollHelper.php:2303
 msgid "color selection area"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2262
+#: includes/Helpers/PollHelper.php:2292
 msgid "color swatch"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1783
-msgid ""
-"Compatibility issue: CBX Poll V2.0.0 or later needs CBX Poll Pro Addon V2.0."
-"0 or later. Please update CBX Poll Pro Addon to version 2.0.0 or later  - "
-"Codeboxr Team"
-msgstr ""
-
-#: includes/Helpers/PollHelper.php:2284
+#: includes/Helpers/PollHelper.php:2314
 msgid "Confirmation"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:687
+#: includes/CBXPollAdmin.php:685
 msgid "Cookie"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:670
+#: includes/CBXPollAdmin.php:668
 msgid "Cookie Expiration Days"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2235
+#: includes/Helpers/PollHelper.php:2265
 msgid "Copied"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2237
+#: includes/Helpers/PollHelper.php:2267
 msgid "Copied to clipboard"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2234
+#: includes/Helpers/PollHelper.php:2264
 msgid "Copy"
 msgstr ""
 
-#: templates/admin/support.php:203
+#: templates/admin/support.php:230
 msgid "Core Plugin Support"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1015
+#: includes/CBXPollAdmin.php:951
 msgid "Created"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:712
+#: includes/CBXPollAdmin.php:704
 msgid ""
 "Default guest user is shown wordpress core login form. Pro addon helps to "
 "integrate 3rd party plugins like woocommerce, restrict content pro etc."
 msgstr ""
 
-#: includes/CBXPollAdmin.php:882
+#: includes/CBXPollAdmin.php:820
 msgid ""
 "Delete Global Config data and custom table created by this plugin on "
 "uninstall."
 msgstr ""
 
-#: includes/CBXPollAdmin.php:883
-msgid ""
-"Details table information is <a href=\"#cbxpoll_plg_gfig_info\">here</a>"
-msgstr ""
-
-#: templates/admin/email_manager_list.php:54
+#: templates/admin/email_manager_list.php:60
 msgid "Disabled"
 msgstr ""
 
-#: widgets/classic-widgets/cbxpollsingle-widget/cbxpollsingle-widget.php:53
+#: includes/Widgets/Classic/Single/CBXPollSingleClassicWidget.php:45
 msgid "Displays single poll from CBX Poll"
 msgstr ""
 
-#: templates/global/login_form.php:21
+#: templates/global/login_form.php:23
 msgid ""
 "Do you have account, <a role=\"button\" class=\"guest-login-trigger cbxpoll-"
 "guest-login-trigger\" href=\"#\">please login</a>"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1677
+#: includes/CBXPollAdmin.php:1524 includes/CBXPollAdmin.php:1525
 msgid "Documentation"
 msgstr ""
 
-#: templates/admin/support.php:185
+#: templates/admin/support.php:212
 msgid "Documentation & User Guide"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2009
+#: includes/Helpers/PollHelper.php:2037
 msgid "Don't show login form, show default login url"
 msgstr ""
 
-#: includes/Helpers/cbxpoll-functions.php:274
+#: includes/Helpers/cbxpoll-functions.php:275
 msgid "Draft"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:1704
+#: includes/Helpers/PollHelper.php:1727
 msgid "Drag and Drop to reorder poll answers"
 msgstr ""
 
-#: includes/PollSettings.php:1166 templates/admin/email_manager_list.php:84
+#: includes/PollSettings.php:1166 templates/admin/email_manager_list.php:90
 msgid "Edit"
 msgstr ""
 
-#: templates/admin/email_manager_edit.php:18
+#: templates/admin/email_manager_edit.php:25
 msgid "Edit notifications"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:241
+#: includes/Helpers/PollHelper.php:248
 msgid "Edit Poll"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:593 includes/Emails/CBXPollEmail.php:601
+#: includes/Emails/CBXPollEmail.php:594 includes/Emails/CBXPollEmail.php:602
 msgid "Email"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:547
+#: includes/Emails/CBXPollEmail.php:548
 msgid "Email heading"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:551
+#: includes/Emails/CBXPollEmail.php:552
 msgid "Email heading here"
 msgstr ""
 
-#: templates/admin/email_manager_list.php:14
+#: templates/admin/email_manager_list.php:20
 msgid "Email notifications"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:600
+#: includes/Emails/CBXPollEmail.php:601
 msgid "Email Recipient(s) as BCC. Put multiple as comma."
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:592
+#: includes/Emails/CBXPollEmail.php:593
 msgid "Email Recipient(s) as CC. Put multiple as comma."
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:608
+#: includes/Emails/CBXPollEmail.php:609
 msgid ""
 "Email reply to. If empty then will be used from <strong>From Email</strong>."
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:576 includes/Emails/CBXPollEmail.php:584
+#: includes/Emails/CBXPollEmail.php:577 includes/Emails/CBXPollEmail.php:585
 msgid ""
 "Email sent from name. Put empty to set this from WordPress core or via any "
 "smtp plugin."
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:543
+#: includes/Emails/CBXPollEmail.php:544
 msgid "Email subject here"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:564
+#: includes/Emails/CBXPollEmail.php:565
 msgid "Email type"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:937
+#: includes/CBXPollAdmin.php:877
 msgid "Emails"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:605 includes/Helpers/PollHelper.php:1651
+#: includes/CBXPollAdmin.php:603 includes/Helpers/PollHelper.php:1674
 msgid "Enable Multi Choice"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:535
+#: includes/Emails/CBXPollEmail.php:536
 msgid "Enable this email notification"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:533
+#: includes/Emails/CBXPollEmail.php:534
 msgid "Enable/Disable"
 msgstr ""
 
-#: templates/admin/email_manager_list.php:54
+#: templates/admin/email_manager_list.php:60
 msgid "Enabled"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1014 includes/Helpers/PollHelper.php:1574
+#: includes/CBXPollAdmin.php:950 includes/Helpers/PollHelper.php:1597
 msgid "End Date"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2282
+#: includes/Helpers/PollHelper.php:2312
 msgid "Error"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1457
+#: includes/CBXPollAdmin.php:1388
 msgid "Error: Answer Color repeat error"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1012 includes/CBXPollAdmin.php:1065
+#: includes/CBXPollAdmin.php:948 includes/CBXPollAdmin.php:1000
 msgid "Expired"
 msgstr ""
 
 #. 1: Plugin setting url 2. Plugin Documentation url
-#: includes/CBXPollAdmin.php:1733 includes/CBXPollAdmin.php:1752
+#: includes/CBXPollAdmin.php:1579 includes/CBXPollAdmin.php:1599
 #, php-format
 msgid ""
 "Explore <a href=\"%1$s\" target=\"_blank\">Plugin Setting</a> | <a "
 "href=\"%2$s\" target=\"_blank\">Documentation</a>"
 msgstr ""
 
-#: templates/admin/email_manager_edit.php:53
+#: templates/admin/email_manager_edit.php:60
 msgid "Field"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2147
+#: includes/Helpers/PollHelper.php:2179
 msgid "Following database tables will be reset/deleted and then re-created."
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2109
+#: includes/Helpers/PollHelper.php:2141
 msgid ""
 "Following option values created by this plugin(including addon) from "
 "WordPress core option table"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:830
+#: includes/CBXPollAdmin.php:768
 msgid "Footer Text"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:866
+#: includes/CBXPollAdmin.php:804
 msgid "Footer Text Color"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:671
+#: includes/CBXPollAdmin.php:669
 msgid ""
 "For guest user cookie is placed in browser, For how many days cookie will "
 "not expire. Default is 30 days"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1675
+#: includes/CBXPollAdmin.php:1520 includes/CBXPollAdmin.php:1521
 msgid "Free Support"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:581 includes/Emails/CBXPollEmail.php:585
+#: includes/Emails/CBXPollEmail.php:582 includes/Emails/CBXPollEmail.php:586
 msgid "From Email"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:573
+#: includes/Emails/CBXPollEmail.php:574
 msgid "From Name"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:577
+#: includes/Emails/CBXPollEmail.php:578
 msgid "From name"
 msgstr ""
 
-#: templates/admin/dashboard.php:37 templates/admin/support.php:41
+#: templates/admin/dashboard.php:41 templates/admin/support.php:47
 msgid "Get Free & Pro Addons"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2209
+#: includes/Helpers/PollHelper.php:2238
 msgid "Global Email Template"
 msgstr ""
 
-#: templates/admin/support.php:29
+#: templates/admin/support.php:35
 msgid "Global Settings"
 msgstr ""
 
-#: templates/admin/dashboard.php:24
+#: templates/admin/dashboard.php:28
 msgid "Go to Settings"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:700 includes/CBXPollAdmin.php:1863
-#: widgets/elementor-elements/cbxpollsingle-elemwidget/class-cbxpollsingle-elemwidget.php:139
-#: widgets/classic-widgets/cbxpollsingle-widget/views/admin.php:60
+#: includes/CBXPollAdmin.php:698 includes/CBXPollAdmin.php:1692
+#: includes/Widgets/Elementor/SinglePoll/CBXPollSingleElementorWidget.php:139
+#: includes/Widgets/Classic/Single/views/admin.php:61
 msgid "Grid"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:639 includes/Helpers/PollHelper.php:657
+#: includes/Helpers/PollHelper.php:663 includes/Helpers/PollHelper.php:681
 msgid "Guest"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:711
+#: includes/CBXPollAdmin.php:703
 msgid "Guest User Login Form"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:823
+#: includes/CBXPollAdmin.php:762
 msgid "Header Image"
 msgstr ""
 
-#: templates/admin/dashboard.php:157 templates/admin/support.php:164
+#: templates/admin/dashboard.php:161 templates/admin/support.php:191
 msgid "Help & Supports"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:943 includes/CBXPollAdmin.php:944
+#: includes/CBXPollAdmin.php:883 includes/CBXPollAdmin.php:884
 msgid "Helps & Updates"
 msgstr ""
 
-#: templates/admin/email_manager_list.php:15
+#: templates/admin/email_manager_list.php:21
 msgid ""
 "Here are the list of all the email notification send from this accounting "
 "system. Please note that, few notification may sent from background without "
 "any setting based on the type of not."
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:717
+#: includes/Emails/CBXPollEmail.php:718
 msgid "HTML"
 msgstr ""
 
@@ -656,258 +642,252 @@ msgstr ""
 msgid "https://codeboxr.com/product/cbx-poll-for-wordpress/"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2274
+#: includes/Helpers/PollHelper.php:2304
 msgid "hue selection slider"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:647
+#: includes/CBXPollAdmin.php:645
 msgid ""
 "If set polls will never expire. You can also set individual poll end time."
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2279
+#: includes/Helpers/PollHelper.php:2309
 msgid "Info"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:686
+#: includes/CBXPollAdmin.php:684
 msgid "IP"
 msgstr ""
 
-#: templates/admin/email_manager_edit.php:52
+#: templates/admin/email_manager_edit.php:59
 msgid "Label"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:699 includes/CBXPollAdmin.php:1862
-#: widgets/elementor-elements/cbxpollsingle-elemwidget/class-cbxpollsingle-elemwidget.php:138
-#: widgets/classic-widgets/cbxpollsingle-widget/views/admin.php:59
+#: includes/CBXPollAdmin.php:697 includes/CBXPollAdmin.php:1691
+#: includes/Widgets/Elementor/SinglePoll/CBXPollSingleElementorWidget.php:138
+#: includes/Widgets/Classic/Single/views/admin.php:60
 msgid "List"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2283
+#: includes/Helpers/PollHelper.php:2313
 msgid "Loading"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:579
+#: includes/CBXPollAdmin.php:577
 msgid "Loading ..."
 msgstr ""
 
-#: includes/CBXPollAdmin.php:680
+#: includes/CBXPollAdmin.php:678
 msgid "Log Method"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:681
+#: includes/CBXPollAdmin.php:679
 msgid ""
 "Logging method. [<strong> Note:</strong> Please Select at least one or a "
 "guest user will vote multiple time for a poll.]"
 msgstr ""
 
-#: templates/admin/email_manager_list.php:59
+#: templates/admin/email_manager_list.php:65
 msgid "Manually Triggered"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:718
+#: includes/Emails/CBXPollEmail.php:719
 msgid "Multipart"
 msgstr ""
 
-#: templates/admin/dashboard.php:102
+#: templates/admin/dashboard.php:106
 msgid "myCred"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:558
+#: includes/Emails/CBXPollEmail.php:559
 msgid "N/A"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:646 includes/Helpers/PollHelper.php:1605
+#: includes/CBXPollAdmin.php:644 includes/Helpers/PollHelper.php:1628
 msgid "Never Expire"
 msgstr ""
 
-#: templates/admin/support.php:137
+#: templates/admin/support.php:164
 msgid "New Plugins: HRM & ERP "
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:240
+#: includes/Helpers/PollHelper.php:247
 msgid "New Poll"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:611 includes/CBXPollAdmin.php:641
-#: includes/CBXPollAdmin.php:653 includes/CBXPollAdmin.php:665
-#: includes/CBXPollAdmin.php:727 includes/CBXPollAdmin.php:889
-#: includes/CBXPollAdmin.php:1199 includes/CBXPollAdmin.php:1849
-#: includes/Helpers/PollHelper.php:1599 includes/Helpers/PollHelper.php:1612
-#: includes/Helpers/PollHelper.php:1626 includes/Helpers/PollHelper.php:1658
-#: includes/Helpers/PollHelper.php:2254
-#: widgets/elementor-elements/cbxpollsingle-elemwidget/class-cbxpollsingle-elemwidget.php:124
-#: widgets/classic-widgets/cbxpollsingle-widget/views/admin.php:50
+#: includes/CBXPollAdmin.php:609 includes/CBXPollAdmin.php:639
+#: includes/CBXPollAdmin.php:651 includes/CBXPollAdmin.php:663
+#: includes/CBXPollAdmin.php:719 includes/CBXPollAdmin.php:824
+#: includes/CBXPollAdmin.php:1131 includes/CBXPollAdmin.php:1678
+#: includes/Helpers/PollHelper.php:1622 includes/Helpers/PollHelper.php:1635
+#: includes/Helpers/PollHelper.php:1649 includes/Helpers/PollHelper.php:1681
+#: includes/Helpers/PollHelper.php:2284
+#: includes/Widgets/Elementor/SinglePoll/CBXPollSingleElementorWidget.php:124
+#: includes/Widgets/Classic/Single/views/admin.php:51
 msgid "No"
 msgstr ""
 
 #. %s: Registration Link
-#: templates/global/login_form.php:37
+#: templates/global/login_form.php:39
 #, php-format
 msgid "No account yet? <a href=\"%s\">Register</a>"
 msgstr ""
 
-#: includes/CBXPollPublic.php:208
+#: includes/CBXPollPublic.php:213
 msgid "No approved vote yet"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:247
+#: includes/Helpers/PollHelper.php:254
 msgid "No books found in Trash."
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:246
+#: includes/Helpers/PollHelper.php:253
 msgid "No books found."
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1200
+#: includes/CBXPollAdmin.php:1132
 msgid "No comments"
 msgstr ""
 
-#: includes/CBXPollPublic.php:350
+#: includes/CBXPollPublic.php:357
 msgid "No poll found"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:865
+#: includes/Helpers/PollHelper.php:887
 msgid ""
 "Note: Poll is not published yet or poll doesn't exists. You are checking "
 "this as administrator/editor."
 msgstr ""
 
-#: templates/admin/email_manager_list.php:20
+#: templates/admin/email_manager_list.php:26
 msgid "Notification list"
 msgstr ""
 
 #. translators:translators: %s: Email title
-#: templates/admin/email_manager_edit.php:33
+#: templates/admin/email_manager_edit.php:40
 #, php-format
 msgid "Notification Name: %s"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:675
+#: includes/CBXPollAdmin.php:673
 msgid "Number of days"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2285
+#: includes/Helpers/PollHelper.php:2315
 msgid "OK"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:881
+#: includes/CBXPollAdmin.php:819
 msgid "On Uninstall delete plugin data"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2248 includes/Helpers/PollHelper.php:2256
+#: includes/Helpers/PollHelper.php:2278 includes/Helpers/PollHelper.php:2286
 msgid "Once you delete, it's gone forever. You can not revert it back."
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2120 includes/Helpers/PollHelper.php:2141
+#: includes/Helpers/PollHelper.php:2152 includes/Helpers/PollHelper.php:2173
 msgid "Option ID"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2119 includes/Helpers/PollHelper.php:2140
+#: includes/Helpers/PollHelper.php:2151 includes/Helpers/PollHelper.php:2172
 msgid "Option Name"
 msgstr ""
 
-#: templates/admin/dashboard.php:110 templates/admin/support.php:220
+#: templates/admin/dashboard.php:114 templates/admin/support.php:247
 msgid "Other WordPress Plugins"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:248
+#: includes/Helpers/PollHelper.php:255
 msgctxt ""
 "Overrides the “Featured Image” phrase for this post type. Added in 4.3"
 msgid "Poll Cover Image"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:253
+#: includes/Helpers/PollHelper.php:260
 msgctxt ""
 "Overrides the “Insert into post”/”Insert into page” phrase (used when "
 "inserting media into a post). Added in 4.4"
 msgid "Insert into book"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:250
+#: includes/Helpers/PollHelper.php:257
 msgctxt ""
 "Overrides the “Remove featured image” phrase for this post type. Added in 4.3"
 msgid "Remove cover image"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:249
+#: includes/Helpers/PollHelper.php:256
 msgctxt ""
 "Overrides the “Set featured image” phrase for this post type. Added in 4.3"
 msgid "Set cover image"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:254
+#: includes/Helpers/PollHelper.php:261
 msgctxt ""
 "Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used "
 "when viewing media attached to a post). Added in 4.4"
 msgid "Uploaded to this book"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:251
+#: includes/Helpers/PollHelper.php:258
 msgctxt ""
 "Overrides the “Use as featured image” phrase for this post type. Added in 4.3"
 msgid "Use as cover image"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:245
+#: includes/Helpers/PollHelper.php:252
 msgid "Parent Polls:"
 msgstr ""
 
-#: includes/Helpers/cbxpoll-functions.php:275
+#: includes/Helpers/cbxpoll-functions.php:276
 msgid "Pending Review"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:2032
+#: includes/CBXPollAdmin.php:1857
 msgid "Permalink cache cleared successfully"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:714
+#: includes/Emails/CBXPollEmail.php:715
 msgid "Plain text"
 msgstr ""
 
 #. %1$s: Login Link
-#: templates/global/login_url.php:8
+#: templates/global/login_url.php:11
 #, php-format
 msgid "Please <a href=\"%1$s\">login</a> to access."
 msgstr ""
 
-#: includes/CBXPollAdmin.php:884
-msgid ""
-"Please note that this process can not be undone and it is recommended to "
-"keep full database backup before doing this."
-msgstr ""
-
 #. %s: Permalink setting url
-#: includes/CBXPollAdmin.php:741
+#: includes/CBXPollAdmin.php:733
 #, php-format
 msgid ""
 "Please save <a target=\"_blank\" href=\"%s\">permalink</a> once after "
 "changing any slug."
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1371
+#: includes/CBXPollAdmin.php:1305
 msgid "Please save the post once to enter poll answers."
 msgstr ""
 
 #: includes/PollSettings.php:619 includes/PollSettings.php:682
-#: includes/PollSettings.php:1179 includes/Helpers/PollHelper.php:2231
-#: includes/Helpers/PollHelper.php:2240
+#: includes/PollSettings.php:1179 includes/Helpers/PollHelper.php:2261
+#: includes/Helpers/PollHelper.php:2270
 msgid "Please Select"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1284 includes/CBXPollAdmin.php:1308
+#: includes/CBXPollAdmin.php:1218 includes/CBXPollAdmin.php:1242
 msgid "Please select"
 msgstr ""
 
-#: includes/CBXPollPublic.php:276
+#: includes/CBXPollPublic.php:281
 msgid "Please select at least one answer"
 msgstr ""
 
-#: includes/CBXPollPublic.php:277
+#: includes/CBXPollPublic.php:282
 msgid "Please write note for voting reason other"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1895 includes/Helpers/PollHelper.php:235
+#: includes/CBXPollAdmin.php:1724 includes/Helpers/PollHelper.php:242
 msgid "Poll"
 msgstr ""
 
@@ -915,391 +895,391 @@ msgstr ""
 msgid "Poll and vote system for WordPress"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1177
+#: includes/CBXPollAdmin.php:1109
 msgid "Poll Answers"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:755
+#: includes/CBXPollAdmin.php:747
 msgid "Poll archive srl slug"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:590 includes/Helpers/PollHelper.php:2197
+#: includes/CBXPollAdmin.php:588 includes/Helpers/PollHelper.php:2230
 msgid "Poll Default Settings"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:748
+#: includes/CBXPollAdmin.php:740
 msgid "Poll details url slug"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:817
+#: includes/CBXPollAdmin.php:756
 msgid "Poll Email Template"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:1575
+#: includes/Helpers/PollHelper.php:1598
 msgid ""
 "Poll End Date.  [<strong> Note:</strong> Field required. Default is next "
 "seven days. ]"
 msgstr ""
 
-#: widgets/elementor-elements/cbxpollsingle-elemwidget/class-cbxpollsingle-elemwidget.php:87
+#: includes/Widgets/Elementor/SinglePoll/CBXPollSingleElementorWidget.php:87
 msgid "poll id here"
 msgstr ""
 
-#: widgets/classic-widgets/cbxpollsingle-widget/cbxpollsingle-widget.php:117
-#: widgets/elementor-elements/cbxpollsingle-elemwidget/class-cbxpollsingle-elemwidget.php:168
+#: includes/Widgets/Classic/Single/CBXPollSingleClassicWidget.php:109
+#: includes/Widgets/Elementor/SinglePoll/CBXPollSingleElementorWidget.php:168
 msgid "Poll id missing or poll doesn't exists"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1111
+#: includes/CBXPollAdmin.php:1044
 msgid "Poll Options"
 msgstr ""
 
-#: widgets/elementor-elements/cbxpollsingle-elemwidget/class-cbxpollsingle-elemwidget.php:85
+#: includes/Widgets/Elementor/SinglePoll/CBXPollSingleElementorWidget.php:85
 msgid "Poll Post ID"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:2059
+#: includes/CBXPollAdmin.php:1883
 msgid "Poll reset setting html loaded successfully"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1115
+#: includes/CBXPollAdmin.php:1048
 msgid "Poll Result"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:597
+#: includes/CBXPollAdmin.php:595
 msgid ""
 "Poll result display styles, text and polar area display type are free, you "
 "can buy more display option from <a href=\"https://codeboxr.com/product/cbx-"
 "poll-for-wordpress/\" target=\"_blank\">here</a>"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:2084
+#: includes/CBXPollAdmin.php:1907
 msgid "Poll setting reset scheduled successfully"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:924
+#: includes/CBXPollAdmin.php:864
 msgid "Poll Settings"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:734
+#: includes/CBXPollAdmin.php:726
 msgid "Poll Slugs and Urls"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:1567
+#: includes/Helpers/PollHelper.php:1590
 msgid ""
 "Poll Start Date. [<strong> Note:</strong> Field required. Default is today]"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:1336
+#: includes/Helpers/PollHelper.php:1356
 msgid "Poll Status: Yet to start"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1011
+#: includes/CBXPollAdmin.php:947
 msgid "Poll Title"
 msgstr ""
 
-#: templates/admin/settings.php:34
+#: templates/admin/settings.php:26
 msgid "Poll: Global Settings"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:931 includes/Helpers/PollHelper.php:234
+#: includes/CBXPollAdmin.php:871 includes/Helpers/PollHelper.php:241
 msgid "Polls"
 msgstr ""
 
-#: includes/Helpers/cbxpoll-functions.php:276
+#: includes/Helpers/cbxpoll-functions.php:277
 msgid "Private"
 msgstr ""
 
-#: templates/admin/support.php:213
+#: templates/admin/support.php:240
 msgid "Pro Addon Support"
 msgstr ""
 
-#: includes/Helpers/cbxpoll-functions.php:263
-#: includes/Helpers/cbxpoll-functions.php:273
+#: includes/Helpers/cbxpoll-functions.php:264
+#: includes/Helpers/cbxpoll-functions.php:274
 msgid "Published"
 msgstr ""
 
-#: widgets/elementor-elements/cbxpollsingle-elemwidget/class-cbxpollsingle-elemwidget.php:90
+#: includes/Widgets/Elementor/SinglePoll/CBXPollSingleElementorWidget.php:90
 msgid "Put poll post id"
 msgstr ""
 
-#: templates/admin/dashboard.php:181
+#: templates/admin/dashboard.php:185
 msgid "Quick Support (Email)"
 msgstr ""
 
-#: templates/admin/dashboard.php:209
+#: templates/admin/dashboard.php:213
 msgid "Rate Our Plugin"
 msgstr ""
 
-#: templates/admin/dashboard.php:200
+#: templates/admin/dashboard.php:204
 msgid "Read the CBX Poll User Guide"
 msgstr ""
 
-#: templates/admin/email_manager_list.php:26
+#: templates/admin/email_manager_list.php:32
 msgid "Recipient(s)"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:1724
+#: includes/Helpers/PollHelper.php:1747
 msgid "Remove"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:605
+#: includes/Emails/CBXPollEmail.php:606
 msgid "Reply To"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:609
+#: includes/Emails/CBXPollEmail.php:610
 msgid "Reply to email"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2228
+#: includes/Helpers/PollHelper.php:2258
 msgid "Request failed, please reload the page."
 msgstr ""
 
-#: includes/CBXPollAdmin.php:895
+#: includes/CBXPollAdmin.php:830
 msgid "Reset all data"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:897
+#: includes/CBXPollAdmin.php:832
 msgid "Reset Data"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:896
+#: includes/CBXPollAdmin.php:831
 msgid "Reset option values and all tables created by this plugin"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:596 includes/Helpers/PollHelper.php:1642
+#: includes/CBXPollAdmin.php:594 includes/Helpers/PollHelper.php:1665
 msgid "Result Chart Style"
 msgstr ""
 
-#: templates/admin/support.php:193
+#: templates/admin/support.php:220
 msgid "Review & Rate CBX Poll Plugin"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1676
+#: includes/CBXPollAdmin.php:1522 includes/CBXPollAdmin.php:1523
 msgid "Reviews"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2264
-#: templates/admin/email_manager_edit.php:41
+#: includes/Helpers/PollHelper.php:2294
+#: templates/admin/email_manager_edit.php:48
 msgid "Save"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2269
+#: includes/Helpers/PollHelper.php:2299
 msgid "save and close"
 msgstr ""
 
-#: templates/admin/email_manager_edit.php:114
+#: templates/admin/email_manager_edit.php:121
 msgid "Save Changes"
 msgstr ""
 
-#: includes/PollSettings.php:1385 templates/admin/settings.php:41
+#: includes/PollSettings.php:1385 templates/admin/settings.php:33
 msgid "Save Settings"
 msgstr ""
 
-#: includes/Helpers/cbxpoll-functions.php:277
+#: includes/Helpers/cbxpoll-functions.php:278
 msgid "Scheduled"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:255
+#: includes/Helpers/PollHelper.php:262
 msgctxt ""
 "Screen reader text for the filter links heading on the post type listing "
 "screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4"
 msgid "Filter books list"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:257
+#: includes/Helpers/PollHelper.php:264
 msgctxt ""
 "Screen reader text for the items list heading on the post type listing "
 "screen. Default “Posts list”/”Pages list”. Added in 4.4"
 msgid "Polls list"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:256
+#: includes/Helpers/PollHelper.php:263
 msgctxt ""
 "Screen reader text for the pagination heading on the post type listing "
 "screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4"
 msgid "Polls list navigation"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:244
+#: includes/Helpers/PollHelper.php:251
 msgid "Search Polls"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2241
+#: includes/Helpers/PollHelper.php:2271
 msgid "Search..."
 msgstr ""
 
-#: includes/CBXPollAdmin.php:2163
+#: includes/CBXPollAdmin.php:1986
 msgid "Security check failed!"
 msgstr ""
 
-#: widgets/elementor-elements/cbxpollsingle-elemwidget/class-cbxpollsingle-elemwidget.php:110
+#: includes/Widgets/Elementor/SinglePoll/CBXPollSingleElementorWidget.php:110
 msgid "Select Chart Type"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:1643
+#: includes/Helpers/PollHelper.php:1666
 msgid "Select how you want to show poll result."
 msgstr ""
 
-#: includes/CBXPollAdmin.php:659 includes/Helpers/PollHelper.php:1619
+#: includes/CBXPollAdmin.php:657 includes/Helpers/PollHelper.php:1642
 msgid ""
 "Select if you want poll to show result before expires. After expires the "
 "result will be shown always. Please check it if poll never expires."
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:1593
+#: includes/Helpers/PollHelper.php:1616
 msgid "Select if you want to show content."
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1815
+#: includes/CBXPollAdmin.php:1644
 msgid "Select Poll"
 msgstr ""
 
-#: widgets/classic-widgets/cbxpollsingle-widget/views/admin.php:19
+#: includes/Widgets/Classic/Single/views/admin.php:20
 msgid "Select Poll(Poll post id)"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:630
+#: includes/CBXPollAdmin.php:628
 msgid "Select user roles"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2275
+#: includes/Helpers/PollHelper.php:2305
 msgid "selection slider"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:925 includes/CBXPollAdmin.php:1648
+#: includes/CBXPollAdmin.php:865 includes/CBXPollAdmin.php:1498
 msgid "Settings"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1119
+#: includes/CBXPollAdmin.php:1052
 msgid "Shortcode"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:636
+#: includes/CBXPollAdmin.php:634
 msgid "Show description from poll post type"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2010
+#: includes/Helpers/PollHelper.php:2038
 msgid "Show nothing!"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:635
+#: includes/CBXPollAdmin.php:633
 msgid "Show Poll Description"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1899
-#: widgets/elementor-elements/cbxpollsingle-elemwidget/class-cbxpollsingle-elemwidget.php:120
-#: widgets/classic-widgets/cbxpollsingle-widget/views/admin.php:43
+#: includes/CBXPollAdmin.php:1728
+#: includes/Widgets/Elementor/SinglePoll/CBXPollSingleElementorWidget.php:120
+#: includes/Widgets/Classic/Single/views/admin.php:44
 msgid "Show Poll description"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:1592
+#: includes/Helpers/PollHelper.php:1615
 msgid "Show Poll Description in shortcode"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:720
+#: includes/CBXPollAdmin.php:712
 msgid "Show Register link to guest"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:721
+#: includes/CBXPollAdmin.php:713
 msgid ""
 "Show register link to guest, depends on if registration is enabled in "
 "wordpress core"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:658 includes/Helpers/PollHelper.php:1618
+#: includes/CBXPollAdmin.php:656 includes/Helpers/PollHelper.php:1641
 msgid "Show result before expires"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:756
+#: includes/CBXPollAdmin.php:748
 msgid "Slug used for permalink for poll archive url"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:749
+#: includes/CBXPollAdmin.php:741
 msgid "Slug used for permalink for poll details url"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:2199
+#: includes/CBXPollAdmin.php:2022
 msgid "Sorry, invalid email id"
 msgstr ""
 
 #. %1$s: Login Link
-#: templates/global/login_off.php:8
+#: templates/global/login_off.php:10
 msgid "Sorry, log in feature is not available from this area."
 msgstr ""
 
-#: includes/CBXPollPublic.php:641
+#: includes/CBXPollPublic.php:648
 msgid "Sorry, poll didn't start yet."
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:868
+#: includes/Helpers/PollHelper.php:890
 msgid "Sorry, poll is not published yet or poll doesn't exists."
 msgstr ""
 
-#: includes/CBXPollPublic.php:781
+#: includes/CBXPollPublic.php:788
 msgid "Sorry, something wrong while voting, please refresh this page"
 msgstr ""
 
-#: includes/CBXPollPublic.php:664
+#: includes/CBXPollPublic.php:671
 msgid "Sorry, you are not allowed to vote."
 msgstr ""
 
-#: includes/CBXPollPublic.php:652
+#: includes/CBXPollPublic.php:659
 msgid "Sorry, you can not vote. Poll has already expired."
 msgstr ""
 
-#: includes/CBXPollAdmin.php:2036 includes/CBXPollAdmin.php:2063
-#: includes/CBXPollAdmin.php:2089
+#: includes/CBXPollAdmin.php:1861 includes/CBXPollAdmin.php:1887
+#: includes/CBXPollAdmin.php:1912
 msgid "Sorry, you don't have enough permission"
 msgstr ""
 
-#: includes/Helpers/cbxpoll-functions.php:264
-#: includes/Helpers/PollHelper.php:576 includes/Helpers/PollHelper.php:592
+#: includes/Helpers/cbxpoll-functions.php:265
+#: includes/Helpers/PollHelper.php:597 includes/Helpers/PollHelper.php:614
 msgid "Spam"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1013 includes/Helpers/PollHelper.php:1566
+#: includes/CBXPollAdmin.php:949 includes/Helpers/PollHelper.php:1589
 msgid "Start Date"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1017
+#: includes/CBXPollAdmin.php:953
 msgid "Status"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:539
+#: includes/Emails/CBXPollEmail.php:540
 msgid "Subject"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2280
+#: includes/Helpers/PollHelper.php:2310
 msgid "Success"
 msgstr ""
 
-#: templates/admin/settings.php:40
+#: templates/admin/settings.php:32
 msgid "Support & Docs"
 msgstr ""
 
-#: templates/admin/email_manager_list.php:81
+#: templates/admin/email_manager_list.php:87
 msgid "System User/Guest"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2153 includes/Helpers/PollHelper.php:2175
+#: includes/Helpers/PollHelper.php:2185 includes/Helpers/PollHelper.php:2207
 msgid "Table Name"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2154 includes/Helpers/PollHelper.php:2176
+#: includes/Helpers/PollHelper.php:2186 includes/Helpers/PollHelper.php:2208
 msgid "Table Name in DB"
 msgstr ""
 
-#: includes/CBXPollPublic.php:142
+#: includes/CBXPollPublic.php:147
 msgid "Text"
 msgstr ""
 
-#: includes/Emails/CBXPollEmail.php:556
+#: includes/Emails/CBXPollEmail.php:557
 msgid "Text to appear below the main email content."
 msgstr ""
 
 #. 1: Plugin Version 2. Product details url
-#: includes/CBXPollAdmin.php:1729
+#: includes/CBXPollAdmin.php:1574
 #, php-format
 msgid ""
 "Thanks for installing/deactivating <strong>CBX Poll</strong> V%1$s - <a "
@@ -1307,62 +1287,62 @@ msgid ""
 msgstr ""
 
 #. 1: Plugin Version 2. Product details url
-#: includes/CBXPollAdmin.php:1749
+#: includes/CBXPollAdmin.php:1595
 #, php-format
 msgid ""
 "Thanks for upgrading <strong>CBX Poll</strong> V%1$s , enjoy the new "
 "features and bug fixes - <a href=\"%2$s\" target=\"_blank\">Codeboxr Team</a>"
 msgstr ""
 
-#: includes/CBXPollPublic.php:836
+#: includes/CBXPollPublic.php:843
 msgid "Thanks for voting!"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:846
+#: includes/CBXPollAdmin.php:784
 msgid "The background color of the email."
 msgstr ""
 
-#: includes/CBXPollAdmin.php:853
+#: includes/CBXPollAdmin.php:791
 msgid "The background colour of the main body of email."
 msgstr ""
 
-#: includes/CBXPollAdmin.php:839
+#: includes/CBXPollAdmin.php:777
 msgid "The base color of the email."
 msgstr ""
 
-#: includes/CBXPollAdmin.php:860
+#: includes/CBXPollAdmin.php:798
 msgid "The body text colour of the main body of email."
 msgstr ""
 
-#: includes/CBXPollAdmin.php:867
+#: includes/CBXPollAdmin.php:805
 msgid "The footer text colour of the footer of email."
 msgstr ""
 
 #. 1: Poll answer made by user
-#: includes/Helpers/PollHelper.php:1069 includes/Helpers/PollHelper.php:1073
+#: includes/Helpers/PollHelper.php:1089 includes/Helpers/PollHelper.php:1093
 #, php-format
 msgid ""
 "The Poll is out of date. You have already voted for <strong>\"%s\"</strong>"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:1079
+#: includes/Helpers/PollHelper.php:1099
 msgid "The Poll is out of date. You have not voted."
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:252
+#: includes/Helpers/PollHelper.php:259
 msgctxt ""
 "The post type archive label used in nav menus. Default “Post Archives”. "
 "Added in 4.4"
 msgid "Poll archives"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:831
+#: includes/CBXPollAdmin.php:769
 msgid ""
 "The text to appear at the email footer. Syntax available - <code>{site_title}"
 "</code>"
 msgstr ""
 
-#: templates/admin/dashboard.php:70
+#: templates/admin/dashboard.php:74
 msgid "Third Party plugin Integration"
 msgstr ""
 
@@ -1378,12 +1358,12 @@ msgstr ""
 msgid "This page has shortcode %s"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2278
+#: includes/Helpers/PollHelper.php:2308
 msgid "Tip"
 msgstr ""
 
-#: templates/admin/email_manager_list.php:24
-#: widgets/classic-widgets/cbxpollsingle-widget/views/admin.php:13
+#: templates/admin/email_manager_list.php:30
+#: includes/Widgets/Classic/Single/views/admin.php:14
 msgid "Title"
 msgstr ""
 
@@ -1391,98 +1371,98 @@ msgstr ""
 msgid "Toggle All Sections"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2261
+#: includes/Helpers/PollHelper.php:2291
 msgid "toggle color picker dialog"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2213
+#: includes/Helpers/PollHelper.php:2242
 msgid "Tools"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:875
+#: includes/CBXPollAdmin.php:813
 msgid "Tools Settings"
 msgstr ""
 
 #. 1: Total Votes
-#: includes/CBXPollPublic.php:169
+#: includes/CBXPollPublic.php:174
 msgid "Total votes: %d"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:694
+#: includes/CBXPollAdmin.php:692
 msgid ""
 "Traditionally answer is shown as vericala list but sometimes grid "
 "presentation better for user experience."
 msgstr ""
 
-#: includes/Helpers/cbxpoll-functions.php:278
+#: includes/Helpers/cbxpoll-functions.php:279
 msgid "Trashed"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1683
+#: includes/CBXPollAdmin.php:1528 includes/CBXPollAdmin.php:1529
 msgid "Try Pro Addon"
 msgstr ""
 
-#: templates/admin/email_manager_list.php:25
+#: templates/admin/email_manager_list.php:31
 msgid "Type"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:574 includes/Helpers/PollHelper.php:590
+#: includes/Helpers/PollHelper.php:595 includes/Helpers/PollHelper.php:612
 msgid "Unapproved"
 msgstr ""
 
-#: includes/PollSettings.php:513 includes/Helpers/PollHelper.php:2113
+#: includes/PollSettings.php:513 includes/Helpers/PollHelper.php:2145
 msgid "Uncheck All"
 msgstr ""
 
-#: includes/Helpers/cbxpoll-functions.php:280
+#: includes/Helpers/cbxpoll-functions.php:281
 msgid "Unknown"
 msgstr ""
 
-#: includes/CBXPollPublic.php:176 includes/CBXPollPublic.php:192
+#: includes/CBXPollPublic.php:181 includes/CBXPollPublic.php:197
 msgid "Unknown Answer"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:1056 includes/Helpers/PollHelper.php:1162
+#: includes/Helpers/PollHelper.php:1076 includes/Helpers/PollHelper.php:1182
 msgid "Unknown or answer deleted"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2323 includes/Helpers/PollHelper.php:2348
+#: includes/Helpers/PollHelper.php:2354 includes/Helpers/PollHelper.php:2380
 msgid "Unnamed"
 msgstr ""
 
-#: includes/Helpers/cbxpoll-functions.php:262
+#: includes/Helpers/cbxpoll-functions.php:263
 msgid "Unpublished"
 msgstr ""
 
-#: includes/CBXPoll.php:122 includes/CBXPollEmails.php:56
+#: includes/CBXPoll.php:127 includes/CBXPollEmails.php:60
 #: includes/PollSettings.php:79
 msgid "Unserializing instances of this class is forbidden."
 msgstr ""
 
-#: includes/Helpers/cbxpoll-functions.php:265
-#: includes/Helpers/PollHelper.php:577 includes/Helpers/PollHelper.php:593
+#: includes/Helpers/cbxpoll-functions.php:266
+#: includes/Helpers/PollHelper.php:598 includes/Helpers/PollHelper.php:615
 msgid "Unverified"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2201
+#: includes/Helpers/PollHelper.php:2234
 msgid "Urls & Slugs"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1842
-#: widgets/elementor-elements/cbxpollsingle-elemwidget/class-cbxpollsingle-elemwidget.php:102
-#: widgets/elementor-elements/cbxpollsingle-elemwidget/class-cbxpollsingle-elemwidget.php:125
-#: widgets/classic-widgets/cbxpollsingle-widget/views/admin.php:39
-#: widgets/classic-widgets/cbxpollsingle-widget/views/admin.php:52
-#: widgets/classic-widgets/cbxpollsingle-widget/views/admin.php:62
+#: includes/CBXPollAdmin.php:1671
+#: includes/Widgets/Elementor/SinglePoll/CBXPollSingleElementorWidget.php:102
+#: includes/Widgets/Elementor/SinglePoll/CBXPollSingleElementorWidget.php:125
+#: includes/Widgets/Classic/Single/views/admin.php:40
+#: includes/Widgets/Classic/Single/views/admin.php:53
+#: includes/Widgets/Classic/Single/views/admin.php:63
 msgid "Use from poll post setting"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1850 includes/CBXPollAdmin.php:1864
-#: widgets/elementor-elements/cbxpollsingle-elemwidget/class-cbxpollsingle-elemwidget.php:140
+#: includes/CBXPollAdmin.php:1679 includes/CBXPollAdmin.php:1693
+#: includes/Widgets/Elementor/SinglePoll/CBXPollSingleElementorWidget.php:140
 msgid "Use Poll Post Setting"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2263
+#: includes/Helpers/PollHelper.php:2293
 msgid "use previous color"
 msgstr ""
 
@@ -1490,72 +1470,72 @@ msgstr ""
 msgid "View"
 msgstr ""
 
-#: includes/CBXPollPublic.php:364
+#: includes/CBXPollPublic.php:371
 msgid "View More Polls"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:242
+#: includes/Helpers/PollHelper.php:249
 msgid "View Poll"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:1306
+#: includes/Helpers/PollHelper.php:1326
 msgid "Vote"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1016
+#: includes/CBXPollAdmin.php:952
 msgid "Votes"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:1584
+#: includes/Helpers/PollHelper.php:1607
 msgid "Which user role will have vote capability"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:617
+#: includes/CBXPollAdmin.php:615
 msgid "which user role will have vote capability"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:616 includes/Helpers/PollHelper.php:1583
+#: includes/CBXPollAdmin.php:614 includes/Helpers/PollHelper.php:1606
 msgid "Who Can Vote"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2232
+#: includes/Helpers/PollHelper.php:2262
 msgid "Window Title"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:2008
+#: includes/Helpers/PollHelper.php:2036
 msgid "WordPress Core Login Form"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:610 includes/CBXPollAdmin.php:640
-#: includes/CBXPollAdmin.php:652 includes/CBXPollAdmin.php:664
-#: includes/CBXPollAdmin.php:726 includes/CBXPollAdmin.php:888
-#: includes/CBXPollAdmin.php:1198 includes/CBXPollAdmin.php:1848
-#: includes/Helpers/PollHelper.php:1598 includes/Helpers/PollHelper.php:1611
-#: includes/Helpers/PollHelper.php:1625 includes/Helpers/PollHelper.php:1657
-#: includes/Helpers/PollHelper.php:2253
-#: widgets/elementor-elements/cbxpollsingle-elemwidget/class-cbxpollsingle-elemwidget.php:123
-#: widgets/classic-widgets/cbxpollsingle-widget/views/admin.php:48
+#: includes/CBXPollAdmin.php:608 includes/CBXPollAdmin.php:638
+#: includes/CBXPollAdmin.php:650 includes/CBXPollAdmin.php:662
+#: includes/CBXPollAdmin.php:718 includes/CBXPollAdmin.php:823
+#: includes/CBXPollAdmin.php:1130 includes/CBXPollAdmin.php:1677
+#: includes/Helpers/PollHelper.php:1621 includes/Helpers/PollHelper.php:1634
+#: includes/Helpers/PollHelper.php:1648 includes/Helpers/PollHelper.php:1680
+#: includes/Helpers/PollHelper.php:2283
+#: includes/Widgets/Elementor/SinglePoll/CBXPollSingleElementorWidget.php:123
+#: includes/Widgets/Classic/Single/views/admin.php:49
 msgid "Yes"
 msgstr ""
 
-#: includes/CBXPollAdmin.php:1050 includes/CBXPollAdmin.php:1058
+#: includes/CBXPollAdmin.php:985 includes/CBXPollAdmin.php:993
 msgid "Yet to Start"
 msgstr ""
 
-#: includes/CBXPollPublic.php:758
+#: includes/CBXPollPublic.php:765
 msgid "You already voted this poll !"
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:1106
+#: includes/Helpers/PollHelper.php:1126
 msgid "You are not allowed to vote."
 msgstr ""
 
-#: includes/Helpers/PollHelper.php:1179
+#: includes/Helpers/PollHelper.php:1199
 msgid "You have already voted "
 msgstr ""
 
 #. 1: User's answer for vote
-#: includes/Helpers/PollHelper.php:1176
+#: includes/Helpers/PollHelper.php:1196
 #, php-format
 msgid "You have already voted for <strong>\"%s\"</strong>"
 msgstr ""

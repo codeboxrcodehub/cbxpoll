@@ -186,9 +186,6 @@ final class CBXPoll {
 
 		$plugin_admin = new CBXPollAdmin();
 
-		//add_action( 'upgrader_post_install', [ $plugin_admin, 'upgrader_post_install' ], 0, 3 );
-		//add_action( 'admin_init', [ $plugin_admin, 'plugin_full_reset' ], 0 );
-
 		// init cookie and custom post types
 		add_action( 'init', [ $plugin_admin, 'init_cbxpoll_type' ] );
 
@@ -285,12 +282,12 @@ final class CBXPoll {
 		}
 
 		// ajax for voting
-		add_action( "wp_ajax_cbxpoll_user_vote", [ $plugin_public, "ajax_vote" ] );
-		add_action( "wp_ajax_nopriv_cbxpoll_user_vote", [ $plugin_public, "ajax_vote" ] );
+		add_action( 'wp_ajax_cbxpoll_user_vote', [ $plugin_public, 'ajax_vote' ] );
+		add_action( 'wp_ajax_nopriv_cbxpoll_user_vote', [ $plugin_public, 'ajax_vote'] );
 
 		// ajax for read more page
-		add_action( "wp_ajax_cbxpoll_list_pagination", [ $plugin_public, "ajax_poll_list" ] );
-		add_action( "wp_ajax_nopriv_cbxpoll_list_pagination", [ $plugin_public, "ajax_poll_list" ] );
+		add_action( 'wp_ajax_cbxpoll_list_pagination', [ $plugin_public, 'ajax_poll_list' ] );
+		add_action( 'wp_ajax_nopriv_cbxpoll_list_pagination', [ $plugin_public, 'ajax_poll_list' ] );
 
 		add_action( 'widgets_init', [ $plugin_public, 'init_widgets' ] );
 

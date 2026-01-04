@@ -17,15 +17,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 // If uninstall not called from WordPress, then exit.
 use Cbx\Poll\CBXPollUninstall;
 
+// If uninstall not called from WordPress, then exit.
+if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
+	exit;
+}
+
 
 /**
  * The code that runs during plugin uninstall.
  */
-function uninstall_cbxpoll() {
+function cbxpoll_uninstall() {
 	require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
 	CBXPollUninstall::uninstall();
-}//end function uninstall_cbxpoll
+}//end function cbxpoll_uninstall
 
 if ( ! defined( 'CBXPOLL_PLUGIN_NAME' ) ) {
-	uninstall_cbxpoll();
+	cbxpoll_uninstall();
 }

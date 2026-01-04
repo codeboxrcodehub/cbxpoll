@@ -323,10 +323,9 @@ class CBXPollPublic {
 		$options = shortcode_atts( [
 			'per_page'    => 5,
 			'chart_type'  => $global_result_chart_type, //chart type, default will be always 'text' if not defined
-			//'chart_type'  => '', //chart type, default will be always 'text' if not defined
 			'grid'        => $global_answer_grid_list,  //show grid or list as answer
 			'description' => 1,                         //show poll description,
-			'user_id'     => 0                          //if we want to show polls from any user
+			'user_id'     => ''                          //if we want to show polls from any user
 		], $atts );
 
 		$per_page            = (int) $options['per_page']; //just for check now its 2 after get from args
@@ -335,18 +334,21 @@ class CBXPollPublic {
 		$description      = intval( $options['description'] );
 		$chart_type       = $options['chart_type'];
 		$answer_grid_list = intval( $options['grid'] );
-		$user_id          = intval( $options['user_id'] );
+
+
+		$user_id          = $options['user_id'];
+        if(is_string($user_id) && $user_id === 'current_user') {
+            $user_id = get_current_user_id();
+        }
+        else{
+            $user_id = absint($user_id);
+        }
+
 
 		$content = '<div class="cbxpoll-listing-wrap">';
 		$content .= '<div class="cbxpoll-listing">';
 
-		$poll_list_output = PollHelper::poll_list( $user_id,
-			$per_page,
-			$current_page_number,
-			$chart_type,
-			$answer_grid_list,
-			$description,
-			'shortcode' );
+		$poll_list_output = PollHelper::poll_list( $user_id, $per_page, $current_page_number, $chart_type, $answer_grid_list, $description,'shortcode' );
 
 
 		if ( intval( $poll_list_output['found'] ) ) {
