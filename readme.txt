@@ -4,7 +4,7 @@ Donate link: https://codeboxr.com
 Tags: poll,vote,survey,quiz,contest
 Requires at least: 5.3
 Tested up to: 6.9
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -75,6 +75,10 @@ Polls can be created as text, photo, video, audio, html. Both Logged in and gues
 * [New] Frontend dashboard for creating poll from frontend with approval and other features.
 * You need any more features ?  Let us know, we will implement either in free core version or in pro addon.
 
+## 💎 CBX Poll Pro Custom Integration ##
+
+* Gamipress
+* Uncanny Automator
 
 ### 🧮 Guest user Login Integrations ###
 * Wordpress Core Login form (Core)
@@ -116,6 +120,9 @@ Poll post type content is poll description.
 
 
 == Changelog ==
+= 2.0.2 =
+* [fixed] Plugin setting's left menu hides in some cases(fixed)
+
 = 2.0.1 =
 * [updated] WordPress 6.9 compatible
 * [updated] Plugin 1.8.0 compatible

@@ -98,6 +98,12 @@ $doc_url    = PollHelper::url_utmy( 'https://codeboxr.com/doc/cbxpoll-doc/' );
                     </div>
                     <div class="content">
                         <div class="cbx-backend-settings-row">
+                            <p>Version - 2.0.2</p>
+                            <ul>
+                                <li>[fixed] Plugin setting's left menu hides in some cases(fixed)</li>
+                            </ul>
+                        </div>
+                        <div class="cbx-backend-settings-row">
                             <p>Version - 2.0.1</p>
                             <ul>
                                 <li>[update] Plugin check version V1.8.0 compatible</li>

@@ -9,7 +9,7 @@
  * Plugin Name:       CBX Poll
  * Plugin URI:        https://codeboxr.com/product/cbx-poll-for-wordpress/
  * Description:       Poll and vote system for WordPress
- * Version:           2.0.1
+ * Version:           2.0.2
  * Author:            codeboxr
  * Author URI:        https://codeboxr.com
  * License:           GPL-2.0+
@@ -29,7 +29,7 @@ use Cbx\Poll\Helpers\PollHelper;
 
 //plugin definition specific constants
 defined( 'CBXPOLL_PLUGIN_NAME' ) or define( 'CBXPOLL_PLUGIN_NAME', 'cbxpoll' );
-defined( 'CBXPOLL_PLUGIN_VERSION' ) or define( 'CBXPOLL_PLUGIN_VERSION', '2.0.1' );
+defined( 'CBXPOLL_PLUGIN_VERSION' ) or define( 'CBXPOLL_PLUGIN_VERSION', '2.0.2' );
 defined( 'CBXPOLL_BASE_NAME' ) or define( 'CBXPOLL_BASE_NAME', plugin_basename( __FILE__ ) );
 defined( 'CBXPOLL_ROOT_PATH' ) or define( 'CBXPOLL_ROOT_PATH', plugin_dir_path( __FILE__ ) );
 defined( 'CBXPOLL_ROOT_URL' ) or define( 'CBXPOLL_ROOT_URL', plugin_dir_url( __FILE__ ) );
