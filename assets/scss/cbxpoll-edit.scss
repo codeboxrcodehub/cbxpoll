@@ -1,0 +1,191 @@
+@import "misc/variable";
+@import "../../../../../cbxdesign/chota/variables";
+
+.meta-options{
+  label{
+    display: block;
+  }
+}
+
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+.cbxpoll_clear {
+  clear: both;
+}
+
+#cbxpoll_metabox {
+  background: #00204a !important;
+  color: #fff !important;
+
+  .postbox-header{
+    background-color: #fff;
+    color: #000;
+  }
+
+  .cbx-chota {
+    input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]),
+    select,
+    textarea,
+    textarea[type="text"] {
+      width: auto;
+      display: inline-block;
+      background-color: #fff;
+
+    }
+  }
+
+  label {
+    color: #fff !important;
+  }
+
+}
+
+/*.cbpollmoveicon {
+  background: url("../images/move.png") left top no-repeat;
+  width: 16px;
+  height: 16px;
+  display: block;
+  text-indent: -99999px;
+  cursor: move;
+  margin-top: 4px;
+}*/
+
+#cbx_poll_answers_items{
+
+  li{
+    display: flex;
+    align-items: center;
+
+    &.cbx_poll_items_placeholder {
+      background: #f7f7f7;
+      min-height: 36px;
+      border: 1px dashed;
+    }
+    &.cbx_poll_items {
+      list-style: none;
+      margin: 6px 0;
+      border: 1px solid #ccc;
+      padding: 5px;
+      position: relative;
+      border-radius: 4px;
+
+
+      .cbx_pollmove {
+        order: 0;
+        margin-right: 5px;
+      }
+
+
+
+      .cbxpoll_answer {
+        order: 1;
+        font-weight: normal !important;
+        font-size: 14px !important;
+        line-height: 1.2 !important;
+      }
+
+      /*.cbxpoll_answer_color{
+        order: 2;
+      }*/
+
+      .cbxpoll_answer_color-wrap{
+        margin-left: 10px;
+        margin-right: 10px;
+        order: 2;
+      }
+
+      .cbxpoll_answer_extra_field_trig{
+        order: 3;
+        //margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .cbxpoll_answer_reason_field_trig{
+        order: 4;
+      }
+
+      .cbx_pollremove {
+        order: 5;
+        margin-left: auto;
+      }
+
+      .cbxpoll_answer_reason_field_panel{
+        order: 6;
+      }
+    }
+    &.placeholder{
+      position: relative;
+      &:before{
+        position: absolute;
+      }
+    }
+
+  }
+}
+
+#cbxpoll_meta_fields_wrapper {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+
+  .add-cbx-poll-answer-wrap {
+    text-align: center;
+
+    .add-cbx-poll-answer{
+      .cbx-icon{
+        svg{
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+
+
+  .form-table {
+    tr:nth-child(odd) {
+      background-color: #FAF9F6;
+    }
+
+    td {
+      fieldset.radio_fields label {
+        display: inline-block !important;
+        margin-right: 10px !important;
+
+        &:last-child {
+          margin-right: 0 !important;
+        }
+      }
+    }
+
+    .description {
+      display: block;
+      clear: both;
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    select, input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="week"], textarea {
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+
+  .flexwrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    input[type="text"], select {
+      width: auto;
+    }
+  }
+}

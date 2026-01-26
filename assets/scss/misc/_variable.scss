@@ -1,0 +1,7 @@
+$app_primary_color:  #6648fe;
+$app_secondary_color: #747681;
+
+.cbx-chota {
+  --color-primary: #{$app_primary_color};
+  --color-secondary:  #{$app_secondary_color};
+}

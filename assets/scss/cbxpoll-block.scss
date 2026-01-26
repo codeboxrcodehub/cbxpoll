@@ -1,0 +1,15 @@
+.cbxpoll_block_note {
+  font-size: 13px;
+}
+
+.cbxpoll_block_note:before {
+  content: "\f348";
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 15px/1 'dashicons';
+  vertical-align: middle;
+}
+
+.cbxpoll_block_note_custom_attribute {
+
+}
