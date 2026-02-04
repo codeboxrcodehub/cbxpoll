@@ -1,0 +1,29 @@
+#cbxpoll-email-manager{
+  //background-color: #787c821f;
+  background-color: #fafbfd;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#email_manager_wrapper{
+  .dashboard_section_header{
+    //display: flex;
+    align-items: center;
+    .dashboard_section_header_l{
+      display: flex;
+      justify-content: left;
+
+      flex-direction: column;
+
+      h2{}
+      p{
+        margin-bottom: 0 !important;
+      }
+    }
+    .dashboard_section_header_r{
+      display: flex;
+      justify-content: right;
+    }
+  }
+}
+

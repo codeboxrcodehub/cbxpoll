@@ -18,7 +18,7 @@ if ( ! defined( 'WPINC' ) ) {
 <div class="section_header row">
     <div class="col-12 section_header_l">
         <h2><?php esc_html_e( 'Email notifications', 'cbxpoll' ); ?></h2>
-        <p><?php esc_html_e( 'Here are the list of all the email notification send from this accounting system. Please note that, few notification may sent from background without any setting based on the type of not.', 'cbxpoll' ); ?></p>
+        <p><?php esc_html_e( 'Here are the list of available email notifications. Please note that, few notification may sent from background without any setting based on the type of not.', 'cbxpoll' ); ?></p>
     </div>
     <!--                        <div class="col-6 section_header_r"></div>-->
 </div>

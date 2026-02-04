@@ -6,3 +6,5 @@
 .distignore
 .gitignore
 .gitattributes
+
+assets/scss/

@@ -4,7 +4,7 @@ Donate link: https://codeboxr.com
 Tags: poll,vote,survey,quiz,contest
 Requires at least: 5.3
 Tested up to: 6.9
-Stable tag: 2.0.2
+Stable tag: 2.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,6 +18,7 @@ Polls can be created as text, photo, video, audio, html. Both Logged in and gues
 
 >📺 [Live Demo](https://codeboxr.net/wordpress/cbxpoll/) | >📺 [Learn More](https://codeboxr.com/product/cbx-poll-for-wordpress/) | 🌟 [Upgrade to PRO](https://codeboxr.com/product/cbx-poll-for-wordpress/#downloadarea) | 📋 [Documentation](https://codeboxr.com/cbx-poll-documentation/) | 👨‍💻 [Free Support](https://wordpress.org/support/plugin/cbxpoll/) | 🤴 [Pro Support](https://codeboxr.com/contact-us)
 
+Note: full source code(including scss files) available at [Github Repo](https://github.com/codeboxrcodehub/cbxpoll)
 
 [youtube https://www.youtube.com/watch?v=1mk-oKt8w2E]
 
@@ -97,7 +98,7 @@ Polls can be created as text, photo, video, audio, html. Both Logged in and gues
 2. After install activate the plugin "CBX Poll" through the 'Plugins' menu in WordPress
 3. You'll now see a menu called "CBX Poll" in left menu, start from there, check the setting menu of CBX Poll then create a new poll
 4. Use shortcode or widget as you need.
-5. If need try our proaddon for extra features
+5. If need try our pro addon for extra features
 
 
 == Frequently Asked Questions ==
@@ -120,6 +121,14 @@ Poll post type content is poll description.
 
 
 == Changelog ==
+= 2.0.4 =
+* [updated] Misc changes
+* [updated] Pro Addon V2.0.2 released
+
+= 2.0.3 =
+* [new] Added Category taxonomy for poll
+* [new] Added Tag taxonomy for poll
+
 = 2.0.2 =
 * [fixed] Plugin setting's left menu hides in some cases(fixed)
 

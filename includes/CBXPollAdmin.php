@@ -583,6 +583,40 @@ class CBXPollAdmin {
 
         $fields = [
                 'cbxpoll_global_settings' => apply_filters( 'cbxpoll_global_general_fields', [
+                        'tax_heading'         => [
+                                'name'    => 'tax_heading',
+                                'label'   => esc_html__( 'Taxonomy Settings', 'cbxpoll' ),
+                                'type'    => 'heading',
+                                'default' => '',
+                        ],
+                        'cat_enable'      => [
+                                'name'    => 'cat_enable',
+                                'label'   => esc_html__( 'Enable Category', 'cbxpoll' ),
+                                'desc'    => esc_html__( 'Enable/disable category taxonomy for poll. Category is hierarchical taxonomy.', 'cbxpoll' ),
+                                'type'    => 'checkbox',
+                                'default' => 'on'
+                        ],
+                        'cat_slug'        => [
+                                'name'    => 'cat_slug',
+                                'label'   => esc_html__( 'Category Slug', 'cbxpoll' ),
+                                'desc'    => esc_html__( 'Poll category slug. Default: poll-cat', 'cbxpoll' ),
+                                'type'    => 'slug',
+                                'default' => 'poll-cat'
+                        ],
+                        'tag_enable'      => [
+                                'name'    => 'tag_enable',
+                                'label'   => esc_html__( 'Enable Tag', 'cbxpoll' ),
+                                'desc'    => esc_html__( 'Enable/disable tag taxonomy for poll. Tag is hierarchical taxonomy.', 'cbxpoll' ),
+                                'type'    => 'checkbox',
+                                'default' => 'on'
+                        ],
+                        'tag_slug'        => [
+                                'name'    => 'tag_slug',
+                                'label'   => esc_html__( 'Tag Slug', 'cbxpoll' ),
+                                'desc'    => esc_html__( 'Poll tag slug. Default: poll-tag', 'cbxpoll' ),
+                                'type'    => 'slug',
+                                'default' => 'poll-tag'
+                        ],
                         'poll_defaults_heading' => [
                                 'name'    => 'poll_defaults_heading',
                                 'label'   => esc_html__( 'Poll Default Settings', 'cbxpoll' ),
@@ -592,8 +626,8 @@ class CBXPollAdmin {
                         'result_chart_type'     => [
                                 'name'    => 'result_chart_type',
                                 'label'   => esc_html__( 'Result Chart Style', 'cbxpoll' ),
-                                'desc'    => __( 'Poll result display styles, text and polar area display type are free, you can buy more display option from <a href="https://codeboxr.com/product/cbx-poll-for-wordpress/" target="_blank">here</a>',
-                                        'cbxpoll' ),
+                                'desc'    => wp_kses(__( 'Poll result display styles, text and polar area display type are free, you can buy more display option from <a href="https://codeboxr.com/product/cbx-poll-for-wordpress/" target="_blank">here</a>',
+                                        'cbxpoll' ), ['a' => ['href' => [], 'target' => []]]),
                                 'type'    => 'select',
                                 'default' => 'text',
                                 'options' => $poll_display_methods,

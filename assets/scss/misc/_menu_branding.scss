@@ -1,0 +1,30 @@
+#adminmenu .wp-menu-open#menu-posts-cbxpoll a.menu-top {
+  background: $app_primary_color !important;
+  color: #fff !important;
+}
+
+#menu-posts-cbxpoll .wp-submenu li.current,
+#menu-posts-cbxpoll .wp-submenu li.current:hover {
+  background: lighten($app_primary_color, 10%) !important;
+  color: #fff !important;
+  font-weight: bold !important;
+}
+
+#menu-posts-cbxpoll .wp-submenu li:hover {
+  background: lighten($app_primary_color, 20%) !important;
+  color: #fff !important;
+  font-weight: normal !important;
+}
+
+#menu-posts-cbxpoll .wp-submenu li a:focus,
+#menu-posts-cbxpoll .wp-submenu li a:hover {
+  color: #fff !important;
+}
+
+#adminmenu .menu-posts-cbxpoll .wp-menu-image{
+  height: 34px;
+  img{
+    padding:5px 0 0 0 !important;
+    vertical-align: middle;
+  }
+}

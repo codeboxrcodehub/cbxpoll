@@ -98,6 +98,20 @@ $doc_url    = PollHelper::url_utmy( 'https://codeboxr.com/doc/cbxpoll-doc/' );
                     </div>
                     <div class="content">
                         <div class="cbx-backend-settings-row">
+                            <p>Version - 2.0.4</p>
+                            <ul>
+                                <li>[new] Added Category taxonomy for poll</li>
+                                <li>[new] Added Tag taxonomy for poll</li>
+                            </ul>
+                        </div>
+                        <div class="cbx-backend-settings-row">
+                            <p>Version - 2.0.3</p>
+                            <ul>
+                                <li>[new] Added Category taxonomy for poll</li>
+                                <li>[new] Added Tag taxonomy for poll</li>
+                            </ul>
+                        </div>
+                        <div class="cbx-backend-settings-row">
                             <p>Version - 2.0.2</p>
                             <ul>
                                 <li>[fixed] Plugin setting's left menu hides in some cases(fixed)</li>
@@ -112,23 +126,6 @@ $doc_url    = PollHelper::url_utmy( 'https://codeboxr.com/doc/cbxpoll-doc/' );
                                 <li>[updated] Misc improvement</li>
                             </ul>
                         </div>
-                        <div class="cbx-backend-settings-row">
-                            <p>Version - 2.0.0</p>
-                            <ul>
-                                <li>[new] Plugin check version V1.3.1 compatible</li>
-                                <li>[updated] WordPress core V6.8 compatible</li>
-                                <li>[updated] Dashboard style improvement</li>
-                                <li>[new] SVG icon added everywhere</li>
-                                <li>[updated] Pro Addon V2.0.0 released</li>
-                            </ul>
-                        </div>
-                        <div class="cbx-backend-settings-row">
-                            <p>Version - 1.2.2</p>
-                            <ul>
-                                <li>[improvement] Backend UI improved.</li>
-                                <li>[improvement] Frontend UI improved.</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
                 <div class="cbx-backend-card dashboard-changelog">
@@ -139,6 +136,12 @@ $doc_url    = PollHelper::url_utmy( 'https://codeboxr.com/doc/cbxpoll-doc/' );
                     </div>
                     <div class="content">
                         <div class="cbx-backend-settings-row">
+                            <div class="cbx-backend-settings-row">
+                                <p>Version - 2.0.2</p>
+                                <ul>
+                                    <li>[updated] Uncanny integration for on poll vote - added category taxonomy condition</li>
+                                </ul>
+                            </div>
                             <div class="cbx-backend-settings-row">
                                 <p>Version - 2.0.1</p>
                                 <ul>

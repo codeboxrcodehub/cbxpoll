@@ -279,6 +279,97 @@ class PollHelper
         ];
 
         register_post_type('cbxpoll', apply_filters('cbxpoll_post_type_args', $args));
+
+
+	    // register cbxpoll_cat taxonomy
+	    $cat_enable       = $settings->get_field( 'cat_enable', 'cbxpoll_global_settings', 'on' );
+	    $cat_slug_default = $settings->get_field( 'cat_slug', 'cbxpoll_global_settings', 'poll-cat');
+	    $cat_slug         = apply_filters( 'cbxpoll_category_slug', $cat_slug_default );
+
+	    if ( $cat_enable == 'on' ) {
+		    $poll_cat_labels = [
+			    'name'                       => _x( 'Categories', 'Taxonomy General Name', 'cbxpoll' ),
+			    'singular_name'              => _x( 'Category', 'Taxonomy Singular Name', 'cbxpoll' ),
+			    'menu_name'                  => esc_html__( 'Categories', 'cbxpoll' ),
+			    'all_items'                  => esc_html__( 'All Categories', 'cbxpoll' ),
+			    'parent_item'                => esc_html__( 'Parent Category', 'cbxpoll' ),
+			    'parent_item_colon'          => esc_html__( 'Parent Category:', 'cbxpoll' ),
+			    'new_item_name'              => esc_html__( 'New Category Name', 'cbxpoll' ),
+			    'add_new_item'               => esc_html__( 'Add New Category', 'cbxpoll' ),
+			    'edit_item'                  => esc_html__( 'Edit Category', 'cbxpoll' ),
+			    'update_item'                => esc_html__( 'Update Category', 'cbxpoll' ),
+			    'view_item'                  => esc_html__( 'View Category', 'cbxpoll' ),
+			    'separate_items_with_commas' => esc_html__( 'Separate Categories with commas', 'cbxpoll' ),
+			    'add_or_remove_items'        => esc_html__( 'Add or remove Categories', 'cbxpoll' ),
+			    'choose_from_most_used'      => esc_html__( 'Choose from the most used', 'cbxpoll' ),
+			    'popular_items'              => esc_html__( 'Popular Categories', 'cbxpoll' ),
+			    'search_items'               => esc_html__( 'Search Categories', 'cbxpoll' ),
+			    'not_found'                  => esc_html__( 'Not Found', 'cbxpoll' ),
+			    'no_terms'                   => esc_html__( 'No Categories', 'cbxpoll' ),
+			    'items_list'                 => esc_html__( 'Categories list', 'cbxpoll' ),
+			    'items_list_navigation'      => esc_html__( 'Categories list navigation', 'cbxpoll' ),
+		    ];
+
+		    $poll_cat_args = [
+			    'labels'            => apply_filters( 'cbxpoll_post_tax_category_labels', $poll_cat_labels ),
+			    'hierarchical'      => true,
+			    'public'            => true,
+			    'show_ui'           => true,
+			    'show_admin_column' => true,
+			    'show_in_nav_menus' => true,
+			    'show_tagcloud'     => true,
+			    'rewrite'           => [
+				    'slug' => $cat_slug
+			    ]
+		    ];
+		    register_taxonomy( 'cbxpoll_cat', [ 'cbxpoll' ], apply_filters( 'cbxpoll_post_tax_category_args', $poll_cat_args ) );
+	    }
+
+
+	    // register cbxpoll_tag taxonomy
+	    $tag_enable       = $settings->get_field( 'tag_enable', 'cbxpoll_global_settings', 'on' );
+	    $tag_slug_default = $settings->get_field( 'tag_slug', 'cbxpoll_global_settings', 'poll-tag');
+	    $tag_slug         = apply_filters( 'cbxpoll_tag_slug', $tag_slug_default );
+
+	    if ( $tag_enable == 'on' ) {
+		    $poll_tag_labels = [
+			    'name'                       => _x( 'Tags', 'Taxonomy General Name', 'cbxpoll' ),
+			    'singular_name'              => _x( 'Tag', 'Taxonomy Singular Name', 'cbxpoll' ),
+			    'menu_name'                  => esc_html__( 'Tags', 'cbxpoll' ),
+			    'all_items'                  => esc_html__( 'All Tags', 'cbxpoll' ),
+			    'parent_item'                => esc_html__( 'Parent Tag', 'cbxpoll' ),
+			    'parent_item_colon'          => esc_html__( 'Parent Tag:', 'cbxpoll' ),
+			    'new_item_name'              => esc_html__( 'New Tag Name', 'cbxpoll' ),
+			    'add_new_item'               => esc_html__( 'Add New Tag', 'cbxpoll' ),
+			    'edit_item'                  => esc_html__( 'Edit Tag', 'cbxpoll' ),
+			    'update_item'                => esc_html__( 'Update Tag', 'cbxpoll' ),
+			    'view_item'                  => esc_html__( 'View Tag', 'cbxpoll' ),
+			    'separate_items_with_commas' => esc_html__( 'Separate Tags with commas', 'cbxpoll' ),
+			    'add_or_remove_items'        => esc_html__( 'Add or remove Tags', 'cbxpoll' ),
+			    'choose_from_most_used'      => esc_html__( 'Choose from the most used', 'cbxpoll' ),
+			    'popular_items'              => esc_html__( 'Popular Tags', 'cbxpoll' ),
+			    'search_items'               => esc_html__( 'Search Tags', 'cbxpoll' ),
+			    'not_found'                  => esc_html__( 'Not Found', 'cbxpoll' ),
+			    'no_terms'                   => esc_html__( 'No Tags', 'cbxpoll' ),
+			    'items_list'                 => esc_html__( 'Tags list', 'cbxpoll' ),
+			    'items_list_navigation'      => esc_html__( 'Tags list navigation', 'cbxpoll' ),
+		    ];
+
+		    $poll_tag_args = [
+			    'labels'            => apply_filters( 'cbxpoll_post_tax_tag_labels', $poll_tag_labels ),
+			    'hierarchical'      => false,
+			    'public'            => true,
+			    'show_ui'           => true,
+			    'show_admin_column' => true,
+			    'show_in_nav_menus' => true,
+			    'show_tagcloud'     => true,
+			    'rewrite'           => [
+				    'slug' => $tag_slug
+			    ]
+		    ];
+
+		    register_taxonomy( 'cbxpoll_tag', [ 'cbxpoll' ], apply_filters( 'cbxpoll_post_tax_tag_args', $poll_tag_args ) );
+	    }
     }//end method create_cbxpoll_post_type
 
     /**

@@ -1,0 +1,67 @@
+@import "misc/variable";
+@import "../../../../../cbxdesign/chota/chota";
+@import "misc/menu_branding";
+@import "misc/icons";
+
+@import "../../../../../cbxdesign/chota/builders/misc";
+@import "../../../../../cbxdesign/chota/vue_final_modal";
+//@import '../../../../../node_modules/flatpickr/dist/flatpickr';
+//@import '../../../../../node_modules/flatpickr/dist/plugins/monthSelect/style.css';
+//@import "dashboard/global_dashboard";
+
+@import "email-manager/email-mananger";
+
+
+//@import "../../../../../cbxdesign/chota/support_dashboard";
+//@import "../../../../../cbxdesign/chota/admin_dash_override";
+//@import "../../../../../cbxdesign/chota/wplisting_filters";
+
+#cbxpoll_email_items{
+ .button.cbxpoll_email_status{
+   &.cbxpoll_email_status_enabled{
+     color: #027A48 !important;
+     border: 1px solid #027A48 !important;
+     border-radius: 50% !important;
+     padding: 4px !important;
+   }
+
+   &.cbxpoll_email_status_disabled{
+     color: #FF5E87 !important;
+     border: 1px solid #FF5E87 !important;
+     border-radius: 50% !important;
+     padding: 4px !important;
+   }
+
+   &.cbxpoll_email_status_manual{
+     color: var(--color-grey) !important;
+     border: 1px solid var(--color-grey) !important;
+     border-radius: 50% !important;
+     padding: 4px !important;
+   }
+
+ }
+}
+
+#cbxpoll_email_edit{
+  width: 100%;
+  max-width: 700px;
+
+  .cbxpoll_email_edit_field{
+    .description{
+      margin: 10px 0;
+    }
+
+  }
+}
+
+#dashlisting_toolbar{
+  background-color: #EFF0FD;
+  border: 1px solid #5d5dff33;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 10px 22px 0 rgba(0,4,32,.05) !important;
+
+  h2{
+    margin-bottom: 0 !important;
+  }
+}
