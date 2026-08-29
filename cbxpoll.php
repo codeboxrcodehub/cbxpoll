@@ -44,7 +44,7 @@ defined( 'CBXPOLL_RAND_MAX' ) or define( 'CBXPOLL_RAND_MAX', 999999 );
 defined( 'CBXPOLL_COOKIE_EXP_14D' ) or define( 'CBXPOLL_COOKIE_EXP_14D', time() + 1209600 ); //Expiration of 14 days.
 defined( 'CBXPOLL_COOKIE_EXP_7D' ) or define( 'CBXPOLL_COOKIE_EXP_7D', time() + 604800 );    //Expiration of 7 days.
 
-defined( 'CBXPOLL_WP_MIN_VERSION' ) or define( 'CBXPOLL_WP_MIN_VERSION', '5.3' );
+defined( 'CBXPOLL_WP_MIN_VERSION' ) or define( 'CBXPOLL_WP_MIN_VERSION', '6.9' );
 defined( 'CBXPOLL_PHP_MIN_VERSION' ) or define( 'CBXPOLL_PHP_MIN_VERSION', '7.4' );
 
 // Include the main class

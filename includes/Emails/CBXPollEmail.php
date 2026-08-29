@@ -835,7 +835,7 @@ class CBXPollEmail {
 
 			$tpl_settings = get_option( 'cbxrbooking_email_tpl', [] );
 			$sel_template = $tpl_settings['selected_template'] ?? 'tpl-general';
-			echo cbxrbooking_get_template_html( 'email_templates/'. esc_attr($sel_template) .'/email-styles.php' );  // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			echo cbxpoll_get_template_html( 'email_templates/'. esc_attr($sel_template) .'/email-styles.php' );  // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 			$css .= ob_get_clean();
 

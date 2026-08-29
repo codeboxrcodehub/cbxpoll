@@ -23,7 +23,8 @@ jobs:
       - name: Find Readme File
         id: find_readme
         run: |
-          readme_file=$(find . -type f -iname "readme.*" | head -n 1)
+          #readme_file=$(find . -type f -iname "readme.*" | head -n 1)
+          readme_file=$(find . -maxdepth 1 -type f -iname "readme.txt" | head -n 1)
           if [ -n "$readme_file" ]; then
             echo "Readme file found: $readme_file"
             echo "readme_file=$readme_file" >> $GITHUB_ENV
@@ -79,8 +80,10 @@ jobs:
           echo "Extracted release notes for version $version:"
           printf "%b" "$release_notes"
 
-          # Set output
-          echo "::set-output name=notes::$(printf "%b" "$release_notes")"
+          # Set output (fixed, now using Environment File)
+          echo "notes<<EOF" >> $GITHUB_OUTPUT
+          printf "%b\n" "$release_notes" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Debug Release Notes
         run: |

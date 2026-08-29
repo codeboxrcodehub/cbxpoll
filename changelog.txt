@@ -1,19 +1,20 @@
 == Changelog ==
+
 = 2.0.5 =
-* [updated] WordPress 7.1 compatible
-* [new] Pro Addon V2.0.3 released
-* [updated] Plugin check 2.1.0 compatible
+* Updated: WordPress 7.1 compatibility
+* Added: Pro Addon V2.0.3
+* Updated: Plugin Check 2.1.0 compatibility
 
 = 2.0.4 =
-* [updated] Misc changes
-* [updated] Pro Addon V2.0.2 released
+* Updated: Miscellaneous changes
+* Updated: Pro Addon V2.0.2
 
 = 2.0.3 =
-* [new] Added Category taxonomy for poll
-* [new] Added Tag taxonomy for poll
+* Added: Category taxonomy for polls
+* Added: Tag taxonomy for polls
 
 = 2.0.2 =
-* [fixed] Plugin setting's left menu hides in some cases(fixed)
+* Fixed: An issue where the plugin settings left menu was hidden in some cases
 
 = 2.0.1 =
 * [updated] WordPress 6.9 compatible
