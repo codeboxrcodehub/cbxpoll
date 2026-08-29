@@ -3,8 +3,8 @@ Contributors: codeboxr, manchumahara
 Donate link: https://codeboxr.com
 Tags: poll,vote,survey,quiz,contest
 Requires at least: 5.3
-Tested up to: 6.9
-Stable tag: 2.0.4
+Tested up to: 7.1
+Stable tag: 2.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,7 @@ Polls can be created as text, photo, video, audio, html. Both Logged in and gues
 
 >📺 [Live Demo](https://codeboxr.net/wordpress/cbxpoll/) | >📺 [Learn More](https://codeboxr.com/product/cbx-poll-for-wordpress/) | 🌟 [Upgrade to PRO](https://codeboxr.com/product/cbx-poll-for-wordpress/#downloadarea) | 📋 [Documentation](https://codeboxr.com/cbx-poll-documentation/) | 👨‍💻 [Free Support](https://wordpress.org/support/plugin/cbxpoll/) | 🤴 [Pro Support](https://codeboxr.com/contact-us)
 
-Note: full source code(including scss files) available at [Github Repo](https://github.com/codeboxrcodehub/cbxpoll)
+Note: Full source code(including scss files) available at [Github Repo](https://github.com/codeboxrcodehub/cbxpoll)
 
 [youtube https://www.youtube.com/watch?v=1mk-oKt8w2E]
 
@@ -98,7 +98,7 @@ Note: full source code(including scss files) available at [Github Repo](https://
 2. After install activate the plugin "CBX Poll" through the 'Plugins' menu in WordPress
 3. You'll now see a menu called "CBX Poll" in left menu, start from there, check the setting menu of CBX Poll then create a new poll
 4. Use shortcode or widget as you need.
-5. If need try our pro addon for extra features
+5. If you need try our pro addon for extra features
 
 
 == Frequently Asked Questions ==
@@ -109,7 +109,7 @@ yes, there is setting in every poll to set which user groups can vote .
 
 = Is it possible to enable a poll always  ? =
 
-yes, there is option in every poll ,a checkbox called never expires ,check this if you want to enable a poll always
+yes, there is option in every poll a checkbox called never expires, check this if you want to enable a poll always
 
 = Where is poll description  ? =
 
@@ -121,6 +121,11 @@ Poll post type content is poll description.
 
 
 == Changelog ==
+= 2.0.5 =
+* [updated] WordPress 7.1 compatible
+* [new] Pro Addon V2.0.3 released
+* [updated] Plugin check 2.1.0 compatible
+
 = 2.0.4 =
 * [updated] Misc changes
 * [updated] Pro Addon V2.0.2 released
@@ -131,105 +136,3 @@ Poll post type content is poll description.
 
 = 2.0.2 =
 * [fixed] Plugin setting's left menu hides in some cases(fixed)
-
-= 2.0.1 =
-* [updated] WordPress 6.9 compatible
-* [updated] Plugin 1.8.0 compatible
-* [new] Pro Addon 2.0.1 Released
-* [updated] Misc changes
-
-= 2.0.0 =
-* [new] Plugin check version V1.3.1 compatible
-* [updated] WordPress core V6.8 compatible
-* [updated] Dashboard style improvement
-* [new] SVG icon added everywhere
-* [updated] Pro Addon V2.0.0 released
-
-
-= 1.2.11 =
-* [fixed] WordPress 6.4.1 compatible
-* [new] PHP 8.2 compatibility checked
-
-= 1.2.10 =
-* [fixed] Gutenberg block editor compatibility fixed for Single poll block
-
-= 1.2.8 =
-* [improvement] Answer Reasons features added in pro addon and necessary compatibility added in core
-* [proaddon] Answer Reasons features added in pro
-
-= 1.2.7 =
-* [improvement] WordPress 5.9 compatibility check
-* [proaddon] New version of pro addon(V1.1.7) released
-* [bug fix] Fixed buddypress posting issues
-* [bug fix] Buddyboss compatibility fixed
-
-= 1.2.6 =
-* [improvement] Guest login form display improved
-* [proaddon] New version of pro addon released
-
-= 1.2.5 =
-* [improvement] Guest login form display logic fixed and improved
-* [proaddon] New version of pro addon released
-
-= 1.2.4 =
-
-* [new] New setting field for poll details slug, default 'cbxpoll'
-* [new] New setting field for poll archive slug, default 'cbxpoll'
-* [new] Login/register integration with WordPress Core, other ways using pro addon
-* [improvement] Other minor improvements
-
-= 1.2.3 =
-
-* [fixed] Session related issues fixed, pro addon needs to use the latest version or version 1.1.3 or later
-* [improvement] Lots of improvement in admin ui and frontend views
-
-
-= 1.2.1 =
-
-* [fixed] Gutenberg block register compatibility fix for old sites
-
-= 1.2.0 =
-
-* [added] WPBakery widget added for single poll display
-* [updated] Backend Style improved
-* [fixed] Elementor widget for Single poll display
-* [updated] Classic widget updated
-* [added] Gutenberg Block added for Single poll display
-
-= 1.1.10 =
-* [Bug fix] Setting api js update for checkbox toggle fix
-
-= 1.1.9 =
-* [New] Added Elementor widget for Single poll display
-* [Buf fix] Poll listing bug fix, when there is no poll it was showing php error
-* [Improvement] Improved Header already sent issue related with session.
-* [Buf fix] Poll result display style fix in some situation
-
-
-
-= 1.1.8 =
-* [Buf fix] Is voted or not bug fix, in some condition this was not working. PRo addon should be updated for this compatibility
-* Othe minor improvement
-
-= 1.1.7 =
-* [Buf fix] Shortcode 'cbxpolls' pagination bug fix
-* [New] Shortcode 'cbxpolls'  now have extra parameter 'user_id' to show polls for a user
-* Some minor bug fix and improvements
-* Pro addon updates for buddyPress integration
-
-= 1.1.6 =
-* [New] Delete plugin data on uninstall - new setting
-* [New] Reset plugin data which helps to start again with fresh plugin setting  - new setting
-* Minor bug fix and improvmenet
-
-= 1.1.5 =
-* [Bug fix] Setting api multi checkout field fixed for non optgroup layout
-* Removed field "Show result to all" as this was practically making problem for usability
-* Few default values are set from 0 to 1 for global setting or form setting to give better user experience after activate the plugin [first time]
-
-= 1.1.4 =
-* [Improvement] Minor bug fix and improvement
-
-= 1.1.3 =
-* [New] On user deleted user votes are deleted and synced
-* [New] New helper method to get all votes by user id with various filters

@@ -9,7 +9,7 @@
  * Plugin Name:       CBX Poll
  * Plugin URI:        https://codeboxr.com/product/cbx-poll-for-wordpress/
  * Description:       Poll and vote system for WordPress
- * Version:           2.0.4
+ * Version:           2.0.5
  * Author:            codeboxr
  * Author URI:        https://codeboxr.com
  * License:           GPL-2.0+
@@ -29,12 +29,12 @@ use Cbx\Poll\Helpers\PollHelper;
 
 //plugin definition specific constants
 defined( 'CBXPOLL_PLUGIN_NAME' ) or define( 'CBXPOLL_PLUGIN_NAME', 'cbxpoll' );
-defined( 'CBXPOLL_PLUGIN_VERSION' ) or define( 'CBXPOLL_PLUGIN_VERSION', '2.0.4' );
+defined( 'CBXPOLL_PLUGIN_VERSION' ) or define( 'CBXPOLL_PLUGIN_VERSION', '2.0.5' );
 defined( 'CBXPOLL_BASE_NAME' ) or define( 'CBXPOLL_BASE_NAME', plugin_basename( __FILE__ ) );
 defined( 'CBXPOLL_ROOT_PATH' ) or define( 'CBXPOLL_ROOT_PATH', plugin_dir_path( __FILE__ ) );
 defined( 'CBXPOLL_ROOT_URL' ) or define( 'CBXPOLL_ROOT_URL', plugin_dir_url( __FILE__ ) );
 
-defined( 'CBXPOLL_PRO_VERSION' ) or define( 'CBXPOLL_PRO_VERSION', '2.0.2' );
+defined( 'CBXPOLL_PRO_VERSION' ) or define( 'CBXPOLL_PRO_VERSION', '2.0.3' );
 
 //plugin functionality specific constants
 defined( 'CBXPOLL_COOKIE_EXPIRATION' ) or define( 'CBXPOLL_COOKIE_EXPIRATION', time() + 1209600 ); //Expiration of 14 days.
@@ -94,33 +94,57 @@ function cbxpoll_compatible_php_version( $version = '' ) {
  * This action is documented in includes/CBXPollActivator.php
  */
 function cbxpoll_activate() {
-    $wp_version  = CBXPOLL_WP_MIN_VERSION;
-    $php_version = CBXPOLL_PHP_MIN_VERSION;
+	try {
+		$wp_version  = CBXPOLL_WP_MIN_VERSION;
+		$php_version = CBXPOLL_PHP_MIN_VERSION;
 
-    $activate_ok = true;
+		$activate_ok = true;
 
-    if ( ! cbxpoll_compatible_wp_version() ) {
-        $activate_ok = false;
+		if ( ! cbxpoll_compatible_wp_version() ) {
+			$activate_ok = false;
 
-        deactivate_plugins( plugin_basename( __FILE__ ) );
+			deactivate_plugins( plugin_basename( __FILE__ ) );
 
-        /* translators: WordPress version */
-        wp_die( sprintf( esc_html__( 'CBX Poll plugin requires WordPress %s or higher!', 'cbxpoll' ), esc_attr($wp_version) ) ); //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-    }
+			/* translators: WordPress version */
+			wp_die( sprintf( esc_html__( 'CBX Poll plugin requires WordPress %s or higher!', 'cbxpoll' ), esc_attr($wp_version) ) ); //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		}
 
-    if ( ! cbxpoll_compatible_php_version() ) {
-        $activate_ok = false;
+		if ( ! cbxpoll_compatible_php_version() ) {
+			$activate_ok = false;
 
-        deactivate_plugins( plugin_basename( __FILE__ ) );
+			deactivate_plugins( plugin_basename( __FILE__ ) );
 
-        /* translators: PHP version */
-        wp_die( sprintf( esc_html__( 'CBX Poll plugin requires PHP %s or higher!', 'cbxpoll' ), esc_attr($php_version) ) ); //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-    }
+			/* translators: PHP version */
+			wp_die( sprintf( esc_html__( 'CBX Poll plugin requires PHP %s or higher!', 'cbxpoll' ), esc_attr($php_version) ) ); //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		}
 
-    if($activate_ok){
-	    require_once CBXPOLL_ROOT_PATH . 'includes/CBXPollActivator.php';
-	    CBXPollActivator::activate();
-    }
+		if($activate_ok){
+			require_once CBXPOLL_ROOT_PATH . 'includes/CBXPollActivator.php';
+			CBXPollActivator::activate();
+		}
+	}
+	catch ( Throwable $e ) {
+		if ( defined( 'WP_DEBUG' ) && WP_DEBUG && defined( 'WP_DEBUG_LOG' ) && WP_DEBUG_LOG ) {
+			//phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log, WordPress.PHP.DevelopmentFunctions.error_log_print_r
+			error_log( print_r( [
+				'message' => $e->getMessage(),
+				'file'    => $e->getFile(),
+				'line'    => $e->getLine(),
+				'trace'   => $e->getTraceAsString(),
+			], true ) );
+		}
+
+
+		deactivate_plugins( plugin_basename( __FILE__ ) );
+
+		wp_die(
+			sprintf(
+				'Activation error: %s',
+				esc_html( $e->getMessage() )
+			)
+		);
+	}
+
 }//end function cbxpoll_activate
 
 /**

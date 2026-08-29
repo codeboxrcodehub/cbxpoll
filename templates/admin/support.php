@@ -21,32 +21,28 @@ $doc_url    = PollHelper::url_utmy( 'https://codeboxr.com/doc/cbxpoll-doc/' );
         <div class="row">
             <div class="col-12">
                 <h2></h2>
-	            <?php do_action('cbxpoll_wpheading_wrap_before', 'support'); ?>
+                <?php do_action( 'cbxpoll_wpheading_wrap_before', 'support' ); ?>
                 <div class="wp-heading-wrap">
                     <div class="wp-heading-wrap-left pull-left">
-	                    <?php do_action('cbxpoll_wpheading_wrap_left_before', 'support'); ?>
+                        <?php do_action( 'cbxpoll_wpheading_wrap_left_before', 'support' ); ?>
                         <h1 class="wp-heading-inline wp-heading-inline-cbxpoll">
-		                    <?php esc_html_e( 'CBX Poll: Support & Docs', 'cbxpoll' ); ?>
+                            <?php esc_html_e( 'CBX Poll: Support & Docs', 'cbxpoll' ); ?>
                         </h1>
-	                    <?php do_action('cbxpoll_wpheading_wrap_left_before', 'support'); ?>
+                        <?php do_action( 'cbxpoll_wpheading_wrap_left_before', 'support' ); ?>
                     </div>
                     <div class="wp-heading-wrap-right pull-right">
-	                    <?php do_action('cbxpoll_wpheading_wrap_right_before', 'support'); ?>
-                        <a href="<?php echo esc_url(admin_url( 'edit.php?post_type=cbxpoll&page=cbxpoll-settings' )); ?>" class="button outline primary pull-right"><?php esc_html_e( 'Global Settings', 'cbxpoll' ); ?></a>
-	                    <?php do_action('cbxpoll_wpheading_wrap_right_after', 'support'); ?>
+                        <?php do_action( 'cbxpoll_wpheading_wrap_right_before', 'support' ); ?>
+                        <a href="<?php echo esc_url( admin_url( 'edit.php?post_type=cbxpoll&page=cbxpoll-settings' ) ); ?>"
+                           class="button outline primary pull-right"><?php esc_html_e( 'Global Settings', 'cbxpoll' ); ?></a>
+                        <?php do_action( 'cbxpoll_wpheading_wrap_right_after', 'support' ); ?>
                     </div>
                 </div>
-	            <?php do_action('cbxpoll_wpheading_wrap_after', 'support'); ?>
+                <?php do_action( 'cbxpoll_wpheading_wrap_after', 'support' ); ?>
             </div>
         </div>
         <div class="row">
             <div class="col-6">
                 <div class="cbx-backend-card">
-                    <div class="header">
-                        <div class="text">
-                            <h2><?php esc_html_e( 'Get Free & Pro Addons', 'cbxpoll' ); ?></h2>
-                        </div>
-                    </div>
                     <div class="content">
                         <div class="row">
                             <div class="col-12">
@@ -56,8 +52,8 @@ $doc_url    = PollHelper::url_utmy( 'https://codeboxr.com/doc/cbxpoll-doc/' );
                                             <a href="<?php echo esc_url( $plugin_url ); ?>"
                                                target="_blank">
                                                 <?php //phpcs:ignore PluginCheck.CodeAnalysis.ImageFunctions.NonEnqueuedImage, PluginCheck.CodeAnalysis.Offloading.OffloadedContent  ?>
-                                                <img src="https://codeboxr.com/wp-content/uploads/productshots/8171-profile.png"
-                                                                     alt="CBX Poll for WordPress"/>
+                                                <img src="<?php echo esc_url( CBXPOLL_ROOT_URL . 'assets/images/8171-profile.webp' ); ?>"
+                                                     alt="CBX Poll for WordPress"/>
                                             </a>
 
                                         </div>
@@ -65,7 +61,13 @@ $doc_url    = PollHelper::url_utmy( 'https://codeboxr.com/doc/cbxpoll-doc/' );
                                             <h3>
                                                 <a href="<?php echo esc_url( $plugin_url ); ?>"
                                                    target="_blank">CBX Poll Pro Addon</a></h3>
-                                            <p>Pro features for CBX Poll plugin</p>
+                                            <p>The Complete Poll & Voting System with moderation for WordPress Sites.
+                                                CBX Poll plugin helps to create poll system for WordPress with all
+                                                possible features. CBX Poll is developed thinking all the basic and
+                                                advanced needs for a poll system in the WordPress ecosystem. The plugin
+                                                is developed keeping both users and developers in mind so that it can be
+                                                customized easily using the simple hook and filter system of
+                                                WordPress.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -74,22 +76,6 @@ $doc_url    = PollHelper::url_utmy( 'https://codeboxr.com/doc/cbxpoll-doc/' );
 
                     </div>
                 </div>
-                <!--<div class="cbx-backend-card dashboard-plugin-Integration">
-                    <div class="header">
-                        <div class="text">
-                            <h2><?php /*esc_html_e( 'Third Party plugin Integration', 'cbxpoll' ); */?></h2>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="cbx-backend-settings-row">
-                            <ul>
-                                <li>Dokan</li>
-                                <li>Woocommerce</li>
-                                <li>Any other plugin that support the custom post type in regular way</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>-->
                 <div class="cbx-backend-card dashboard-changelog">
                     <div class="header">
                         <div class="text">
@@ -97,34 +83,29 @@ $doc_url    = PollHelper::url_utmy( 'https://codeboxr.com/doc/cbxpoll-doc/' );
                         </div>
                     </div>
                     <div class="content">
-                        <div class="cbx-backend-settings-row">
-                            <p>Version - 2.0.4</p>
-                            <ul>
-                                <li>[new] Added Category taxonomy for poll</li>
-                                <li>[new] Added Tag taxonomy for poll</li>
-                            </ul>
-                        </div>
-                        <div class="cbx-backend-settings-row">
-                            <p>Version - 2.0.3</p>
-                            <ul>
-                                <li>[new] Added Category taxonomy for poll</li>
-                                <li>[new] Added Tag taxonomy for poll</li>
-                            </ul>
-                        </div>
-                        <div class="cbx-backend-settings-row">
-                            <p>Version - 2.0.2</p>
-                            <ul>
-                                <li>[fixed] Plugin setting's left menu hides in some cases(fixed)</li>
-                            </ul>
-                        </div>
-                        <div class="cbx-backend-settings-row">
-                            <p>Version - 2.0.1</p>
-                            <ul>
-                                <li>[update] Plugin check version V1.8.0 compatible</li>
-                                <li>[updated] WordPress core V6.9 compatible</li>
-                                <li>[new] Pro Addon plugin V2.0.1 released</li>
-                                <li>[updated] Misc improvement</li>
-                            </ul>
+                        <div class="releases">
+                            <div class="release">
+                                <h3>Version 2.0.5</h3>
+                                <ul>
+                                    <li class="updated">WordPress 7.1 compatible.</li>
+                                    <li class="new">Pro Addon V2.0.3 released.</li>
+                                    <li class="updated">Plugin check 2.1.0 compatible.</li>
+                                </ul>
+                            </div>
+                            <div class="release">
+                                <h3>Version 2.0.4</h3>
+                                <ul>
+                                    <li class="updated">Misc changes.</li>
+                                    <li class="updated">Pro Addon V2.0.2 released.</li>
+                                </ul>
+                            </div>
+                            <div class="release">
+                                <h3>Version 2.0.3</h3>
+                                <ul>
+                                    <li class="new">Added Category taxonomy for poll.</li>
+                                    <li class="new">Added Tag taxonomy for poll.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -136,62 +117,46 @@ $doc_url    = PollHelper::url_utmy( 'https://codeboxr.com/doc/cbxpoll-doc/' );
                     </div>
                     <div class="content">
                         <div class="cbx-backend-settings-row">
-                            <div class="cbx-backend-settings-row">
-                                <p>Version - 2.0.2</p>
-                                <ul>
-                                    <li>[updated] Uncanny integration for on poll vote - added category taxonomy condition</li>
-                                </ul>
-                            </div>
-                            <div class="cbx-backend-settings-row">
-                                <p>Version - 2.0.1</p>
-                                <ul>
-                                    <li>[new] Auto or Dashboard update implemented(need licence key)</li>
-                                    <li>[new] GamiPress integration</li>
-                                    <li>[new] Uncanny automator integration</li>
-                                    <li>[update] Plugin check version V1.8.0 compatible</li>
-                                    <li>[updated] WordPress core V6.9 compatible</li>
-                                    <li>[new] Core plugin V2.0.1 released</li>
-                                    <li>[updated] Misc improvement</li>
-                                </ul>
-                            </div>
-                            <div class="cbx-backend-settings-row">
-                                <p>Version - 2.0.0</p>
-                                <ul>
-                                    <li>[updated] Dashboard style updated</li>
-                                    <li>[new] Plugin check version V1.3.1 compatible</li>
-                                    <li>[updated] WordPress core V6.8 compatible</li>
-                                    <li>[new] SVG icon added everywhere</li>
-                                    <li>[Updated] Core plugin V2.0.0 released</li>
-                                </ul>
+                            <div class="releases">
+                                <div class="release">
+                                    <h3>Version 2.0.3</h3>
+                                    <ul>
+                                        <li class="updated">Uncanny integration for on poll vote - added category taxonomy condition.</li>
+                                        <li class="fixed">Fixed elementor widget.</li>
+                                        <li class="updated">WordPress 7.1 compatible.</li>
+                                        <li class="new">Core Plugin V2.0.5 released.</li>
+                                        <li class="updated">Plugin check 2.1.0 compatible.</li>
+                                    </ul>
+                                </div>
+                                <div class="release">
+                                    <h3>Version 2.0.2</h3>
+                                    <ul>
+                                        <li class="updated">Uncanny integration for on poll vote - added category taxonomy condition.</li>
+                                        <li class="improvements">[improved] Admin poll listing or poll edit screen vote reset click now shows confirm dialog.</li>
+                                    </ul>
+                                </div>
+                                <div class="release">
+                                    <h3>Version 2.0.1</h3>
+                                    <ul>
+                                        <li class="new">Added automatic plugin update features, need to add licence information in plugin setting.</li>
+                                        <li class="updated">WordPress 6.9 compatible.</li>
+                                    </ul>
+                                </div>
+                                <div class="release">
+                                    <h3>Version 2.0.0</h3>
+                                    <ul>
+                                        <li class="updated">Dashboard style updated.</li>
+                                        <li class="new">Plugin check version V1.3.1 compatible.</li>
+                                        <li class="updated">WordPress core V6.8 compatible.</li>
+                                        <li class="new">SVG icon added everywhere.</li>
+                                        <li class="updated">Core plugin V2.0.0 released.</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="cbx-backend-card dashboard-hrm-erp">
-                    <div class="header">
-                        <div class="text">
-                            <h2><?php esc_html_e( 'New Plugins: HRM & ERP ', 'cbxpoll' ); ?></h2>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="cbx-backend-settings-row">
-                            <ul>
-                                <li>
-                                    <a rel="external" target="_blank" href="https://comforterp.com/product/comfort-accounting-accounting-solution-for-wordpress">Comfort
-                                        Accounting</a></li>
-                                <li>
-                                    <a rel="external" target="_blank" href="https://comforterp.com/product/comfort-inventory-and-invoice-complete-invoice-plugin-for-wordpress">Comfort
-                                        Inventory & Invoice</a></li>
-                                <li><a rel="external" target="_blank" href="https://comforthrm.com/product/comfort-resume-wordpress-resume-builder-plugin">Comfort
-                                        Resume</a></li>
-                                <li><a rel="external" target="_blank" href="https://comforthrm.com/product/comfort-job-wordpress-job-board-plugin">Comfort
-                                        Job Board</a></li>
-                                <li><a rel="external" target="_blank" href="https://comforthrm.com/product/comfort-job-application-plugin-for-wordpress">Comfort
-                                        Job Application</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+
             </div>
             <div class="col-6">
                 <div class="cbx-backend-card dashboard-support">
@@ -226,7 +191,7 @@ $doc_url    = PollHelper::url_utmy( 'https://codeboxr.com/doc/cbxpoll-doc/' );
                                     <path d="M18.3 8.1c-.1-.3-.3-.5-.6-.5l-4.8-.7-2.2-4.4c-.1-.3-.4-.4-.7-.4-.3 0-.5.2-.7.4L7.2 6.9l-4.9.7c-.3 0-.5.2-.6.5-.1.3 0 .6.2.8l3.5 3.4-.8 4.7c0 .3.1.6.3.7.1.1.3.1.4.1.1 0 .2 0 .4-.1l4.3-2.3 4.3 2.3c.1.1.2.1.4.1.4 0 .8-.3.8-.8v-.2l-.8-4.8 3.5-3.4c.1 0 .2-.3.1-.5z"
                                           fill="currentColor"/>
                                 </svg>
-                                <?php esc_html_e('Review & Rate CBX Poll Plugin', 'cbxpoll'); ?> </a>
+                                <?php esc_html_e( 'Review & Rate CBX Poll Plugin', 'cbxpoll' ); ?> </a>
                         </div>
                         <div class="cbx-backend-settings-row">
                             <a href="https://wordpress.org/support/plugin/cbxpoll/" target="_blank">
@@ -236,7 +201,7 @@ $doc_url    = PollHelper::url_utmy( 'https://codeboxr.com/doc/cbxpoll-doc/' );
                                           d="M16 2H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 2v7H5.17L4 12.17V4h11zm4 2h2c.55 0 1 .45 1 1v15l-4-4H7c-.55 0-1-.45-1-1v-2h13V6z"
                                           clip-rule="evenodd"/>
                                 </svg>
-                                <?php esc_html_e('Core Plugin Support', 'cbxpoll'); ?></a>
+                                <?php esc_html_e( 'Core Plugin Support', 'cbxpoll' ); ?></a>
                         </div>
                         <div class="cbx-backend-settings-row">
                             <a href="https://codeboxr.com/contact-us" target="_blank">
@@ -246,7 +211,75 @@ $doc_url    = PollHelper::url_utmy( 'https://codeboxr.com/doc/cbxpoll-doc/' );
                                           d="M16 2H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 2v7H5.17L4 12.17V4h11zm4 2h2c.55 0 1 .45 1 1v15l-4-4H7c-.55 0-1-.45-1-1v-2h13V6z"
                                           clip-rule="evenodd"/>
                                 </svg>
-                                <?php esc_html_e('Pro Addon Support', 'cbxpoll'); ?></a>
+                                <?php esc_html_e( 'Pro Addon Support', 'cbxpoll' ); ?></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cbx-backend-card dashboard-hrm-erp">
+                    <div class="header">
+                        <div class="text">
+                            <h2><?php esc_html_e( 'New Plugins: HRM & ERP ', 'cbxpoll' ); ?></h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="cbx-backend-settings-row">
+                            <ul>
+                                <li>
+                                    <a rel="external" target="_blank"
+                                       href="https://comforterp.com/product/comfort-accounting-accounting-solution-for-wordpress">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h5"
+                                                  fill="none" stroke="currentColor" stroke-width="1.8"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        Comfort Accounting
+                                    </a>
+                                </li>
+                                <li>
+                                    <a rel="external" target="_blank"
+                                       href="https://comforterp.com/product/comfort-inventory-and-invoice-complete-invoice-plugin-for-wordpress">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path d="M4 5h16v14H4zM4 9h16M8 5v4M12 13h5M8 13h1M8 17h1"
+                                                  fill="none" stroke="currentColor" stroke-width="1.8"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        Comfort Inventory &amp; Invoice
+                                    </a>
+                                </li>
+                                <li>
+                                    <a rel="external" target="_blank"
+                                       href="https://comforthrm.com/product/comfort-resume-wordpress-resume-builder-plugin">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path d="M6 3h12v18H6zM9 7h6M9 11h6M9 15h4"
+                                                  fill="none" stroke="currentColor" stroke-width="1.8"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        Comfort Resume
+                                    </a>
+                                </li>
+                                <li>
+                                    <a rel="external" target="_blank"
+                                       href="https://comforthrm.com/product/comfort-job-wordpress-job-board-plugin">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path d="M4 7h16v13H4zM9 7V5h6v2M4 11h16M10 11v3h4v-3"
+                                                  fill="none" stroke="currentColor" stroke-width="1.8"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        Comfort Job Board
+                                    </a>
+                                </li>
+                                <li>
+                                    <a rel="external" target="_blank"
+                                       href="https://comforthrm.com/product/comfort-job-application-plugin-for-wordpress">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path d="M6 3h9l4 4v14H6zM15 3v5h4M9 12h6M9 16h4"
+                                                  fill="none" stroke="currentColor" stroke-width="1.8"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        Comfort Job Application
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -259,27 +292,27 @@ $doc_url    = PollHelper::url_utmy( 'https://codeboxr.com/doc/cbxpoll-doc/' );
                     <div class="content">
                         <?php
                         $top_plugins = [
-                            'https://codeboxr.com/product/cbx-changelog-for-wordpress/'                           => 'CBX Changelog',
-                            'https://codeboxr.com/product/cbx-wordpress-bookmark/'                                => 'CBX Bookmark & Favorite',
-                            'https://codeboxr.com/product/cbx-tour-user-walkthroughs-guided-tours-for-wordpress/' => 'CBX Tour – User Walkthroughs/Guided Tours',
-                            'https://codeboxr.com/product/cbx-email-logger-for-wordpress/'                        => 'CBX Email SMTP & Logger',
-                            'https://codeboxr.com/product/cbx-petition-for-wordpress/'                            => 'CBX Petition',
-                            'https://codeboxr.com/product/cbx-multi-criteria-rating-review-for-wordpress/'        => 'CBX Multi Criteria Rating & Review',
-                            'https://codeboxr.com/product/cbx-user-online-for-wordpress/'                         => 'CBX User Online & Last Login',
-                            'https://wordpress.org/plugins/cbxgooglemap/'                                         => 'CBX Map for Google Map & OpenStreetMap',
-                            'https://wordpress.org/plugins/cbxwpemaillogger/'                                     => 'Comfort Email SMTP, Logger & Email Api',
-                            'https://codeboxr.com/product/comfort-restaurant-booking-for-wordpress/'              => 'Comfort Restaurant Booking',
+                                'https://codeboxr.com/product/cbx-changelog-for-wordpress/'                           => 'CBX Changelog',
+                                'https://codeboxr.com/product/cbx-wordpress-bookmark/'                                => 'CBX Bookmark & Favorite',
+                                'https://codeboxr.com/product/cbx-tour-user-walkthroughs-guided-tours-for-wordpress/' => 'CBX Tour – User Walkthroughs/Guided Tours',
+                                'https://codeboxr.com/product/cbx-email-logger-for-wordpress/'                        => 'CBX Email SMTP & Logger',
+                                'https://codeboxr.com/product/cbx-petition-for-wordpress/'                            => 'CBX Petition',
+                                'https://codeboxr.com/product/cbx-multi-criteria-rating-review-for-wordpress/'        => 'CBX Multi Criteria Rating & Review',
+                                'https://codeboxr.com/product/cbx-user-online-for-wordpress/'                         => 'CBX User Online & Last Login',
+                                'https://wordpress.org/plugins/cbxgooglemap/'                                         => 'CBX Map for Google Map & OpenStreetMap',
+                                'https://wordpress.org/plugins/cbxwpemaillogger/'                                     => 'Comfort Email SMTP, Logger & Email Api',
+                                'https://codeboxr.com/product/comfort-restaurant-booking-for-wordpress/'              => 'Comfort Restaurant Booking',
                         ];
 
-                        foreach ($top_plugins as $link => $title){
+                        foreach ( $top_plugins as $link => $title ) {
                             echo '<div class="cbx-backend-settings-row">
-                            <a href="'.esc_url($link).'" target="_blank">
+                            <a href="' . esc_url( $link ) . '" target="_blank">
                                 <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <defs/>
                                     <path d="M16.4 9.1L12.2 5c-.3-.3-.7-.3-1-.2s-.6.5-.6.9v1.7H4.2c-.5 0-.9.4-.9.9v3.4c0 .2.1.5.3.7.2.2.4.3.7.3h6.4v1.7c0 .4.2.7.6.9.4.1.8.1 1-.2l4.1-4.2c.4-.5.4-1.3 0-1.8z"
                                           fill="currentColor"/>
                                 </svg>
-                                '.esc_html($title).'</a>
+                                ' . esc_html( $title ) . '</a>
                         </div>';
                         }
                         ?>

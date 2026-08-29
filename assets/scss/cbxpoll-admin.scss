@@ -199,3 +199,17 @@ input:not(.magic-checkbox)[type=checkbox]:focus {
 		}
 	}
 }
+
+
+.metabox-prefs{
+	input[type=radio]:checked{
+		//border: 0 none !important;
+		background: none !important;
+		&:before{
+			top: 4px;
+			left: 4px;
+		}
+	}
+}
+
+@import '../../../../../cbxdesign/chota/changelog';

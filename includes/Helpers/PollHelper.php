@@ -2526,4 +2526,19 @@ class PollHelper
     {
         cbxpoll_mailer();
     }//end method load_mailer
+
+    /**
+	 * Returns email template names as array
+	 *
+	 * @return mixed|null
+	 * @since 2.0.5
+	 */
+	public static function get_email_templates(){
+		$email_templates = [
+			'tpl-general'    => esc_html__( 'General Template', 'cbxpoll' ),
+			'tpl-clean'      => esc_html__( 'Clean Template', 'cbxpoll' ),
+		];
+
+		return apply_filters('cbxpoll_email_templates', $email_templates);
+	}//end metod get_email_templates
 }//end class PollHelper

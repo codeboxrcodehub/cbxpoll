@@ -580,6 +580,8 @@ class CBXPollAdmin {
         $poll_display_methods = PollHelper::cbxpoll_display_options();
         $poll_display_methods = PollHelper::cbxpoll_display_options_linear( $poll_display_methods );
 
+        $email_templates = PollHelper::get_email_templates();
+
 
         $fields = [
                 'cbxpoll_global_settings' => apply_filters( 'cbxpoll_global_general_fields', [
@@ -791,6 +793,14 @@ class CBXPollAdmin {
                                 'type'    => 'heading',
                                 'default' => '',
                         ],
+                        'selected_template'             => [
+                            'name'              => 'selected_template',
+                            'label'             => esc_html__( 'Email Template', 'cbxpoll' ),
+                            'type'              => 'select',
+                            'default'           => 'tpl-general',
+                            'options'           => $email_templates,
+                            'sanitize_callback' => 'sanitize_text_field'
+                        ],
                         'headerimage'            => [
                                 'name'    => 'headerimage',
                                 'label'   => esc_html__( 'Header Image', 'cbxpoll' ),
@@ -805,7 +815,7 @@ class CBXPollAdmin {
                                 'type'    => 'wysiwyg',
                                 'default' => '{site_title}',
                         ],
-                        'basecolor'              => [
+                        /* 'basecolor'              => [
                                 'name'    => 'basecolor',
                                 'label'   => esc_html__( 'Base Color', 'cbxpoll' ),
                                 'desc'    => esc_html__( 'The base color of the email.', 'cbxpoll' ),
@@ -839,7 +849,7 @@ class CBXPollAdmin {
                                 'desc'    => esc_html__( 'The footer text colour of the footer of email.', 'cbxpoll' ),
                                 'type'    => 'color',
                                 'default' => '#3c3c3c',
-                        ],
+                        ], */
                 ] ),
                 'cbxpoll_tools'           => apply_filters( 'cbxpoll_global_tools_fields', [
                         'tools_heading'        => [

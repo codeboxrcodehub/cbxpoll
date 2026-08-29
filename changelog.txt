@@ -1,0 +1,115 @@
+== Changelog ==
+= 2.0.5 =
+* [updated] WordPress 7.1 compatible
+* [new] Pro Addon V2.0.3 released
+* [updated] Plugin check 2.1.0 compatible
+
+= 2.0.4 =
+* [updated] Misc changes
+* [updated] Pro Addon V2.0.2 released
+
+= 2.0.3 =
+* [new] Added Category taxonomy for poll
+* [new] Added Tag taxonomy for poll
+
+= 2.0.2 =
+* [fixed] Plugin setting's left menu hides in some cases(fixed)
+
+= 2.0.1 =
+* [updated] WordPress 6.9 compatible
+* [updated] Plugin 1.8.0 compatible
+* [new] Pro Addon 2.0.1 Released
+* [updated] Misc changes
+
+= 2.0.0 =
+* [new] Plugin check version V1.3.1 compatible
+* [updated] WordPress core V6.8 compatible
+* [updated] Dashboard style improvement
+* [new] SVG icon added everywhere
+* [updated] Pro Addon V2.0.0 released
+
+
+= 1.2.11 =
+* [fixed] WordPress 6.4.1 compatible
+* [new] PHP 8.2 compatibility checked
+
+= 1.2.10 =
+* [fixed] Gutenberg block editor compatibility fixed for Single poll block
+
+= 1.2.8 =
+* [improvement] Answer Reasons features added in pro addon and necessary compatibility added in core
+* [proaddon] Answer Reasons features added in pro
+
+= 1.2.7 =
+* [improvement] WordPress 5.9 compatibility check
+* [proaddon] New version of pro addon(V1.1.7) released
+* [bug fix] Fixed buddypress posting issues
+* [bug fix] Buddyboss compatibility fixed
+
+= 1.2.6 =
+* [improvement] Guest login form display improved
+* [proaddon] New version of pro addon released
+
+= 1.2.5 =
+* [improvement] Guest login form display logic fixed and improved
+* [proaddon] New version of pro addon released
+
+= 1.2.4 =
+
+* [new] New setting field for poll details slug, default 'cbxpoll'
+* [new] New setting field for poll archive slug, default 'cbxpoll'
+* [new] Login/register integration with WordPress Core, other ways using pro addon
+* [improvement] Other minor improvements
+
+= 1.2.3 =
+
+* [fixed] Session related issues fixed, pro addon needs to use the latest version or version 1.1.3 or later
+* [improvement] Lots of improvement in admin ui and frontend views
+
+= 1.2.1 =
+
+* [fixed] Gutenberg block register compatibility fix for old sites
+
+= 1.2.0 =
+
+* [added] WPBakery widget added for single poll display
+* [updated] Backend Style improved
+* [fixed] Elementor widget for Single poll display
+* [updated] Classic widget updated
+* [added] Gutenberg Block added for Single poll display
+
+= 1.1.10 =
+* [Bug fix] Setting api js update for checkbox toggle fix
+
+= 1.1.9 =
+* [New] Added Elementor widget for Single poll display
+* [Buf fix] Poll listing bug fix, when there is no poll it was showing php error
+* [Improvement] Improved Header already sent issue related with session.
+* [Buf fix] Poll result display style fix in some situation
+
+= 1.1.8 =
+* [Buf fix] Is voted or not bug fix, in some condition this was not working. PRo addon should be updated for this compatibility
+* Othe minor improvement
+
+= 1.1.7 =
+* [Buf fix] Shortcode 'cbxpolls' pagination bug fix
+* [New] Shortcode 'cbxpolls'  now have extra parameter 'user_id' to show polls for a user
+* Some minor bug fix and improvements
+* Pro addon updates for buddyPress integration
+
+= 1.1.6 =
+* [New] Delete plugin data on uninstall - new setting
+* [New] Reset plugin data which helps to start again with fresh plugin setting  - new setting
+* Minor bug fix and improvmenet
+
+= 1.1.5 =
+* [Bug fix] Setting api multi checkout field fixed for non optgroup layout
+* Removed field "Show result to all" as this was practically making problem for usability
+* Few default values are set from 0 to 1 for global setting or form setting to give better user experience after activate the plugin [first time]
+
+= 1.1.4 =
+* [Improvement] Minor bug fix and improvement
+
+= 1.1.3 =
+* [New] On user deleted user votes are deleted and synced
+* [New] New helper method to get all votes by user id with various filters
